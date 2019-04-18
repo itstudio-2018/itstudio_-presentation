@@ -94,6 +94,7 @@ def get_member_of_the_year(request):
         if not year:
             content['status'] = 'year_error'
             return response_error(content)
+        content['year'] = year
 
         members = models.Member.objects.filter(year=year)
         content['num'] = len(members)
