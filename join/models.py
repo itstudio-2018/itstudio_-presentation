@@ -10,6 +10,7 @@ class Applicant(models.Model):
     speciality = models.CharField(max_length=20, verbose_name=u'专业')
 
     status_choice = (
+        (-1, '未通过'),
         (0, '未激活'),
         (1, '待初审'),
         (2, '待面试'),

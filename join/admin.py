@@ -26,6 +26,10 @@ class ApplicantAdmin(admin.ModelAdmin):
         queryset.update(status=4)
     status_4.short_description = '选中'
 
+    def status_false(self, request, queryset):
+        queryset.update(status=-1)
+    status_false.short_description = '刷下'
+
     actions = [status_1, status_2, status_3, status_4]
 
 
