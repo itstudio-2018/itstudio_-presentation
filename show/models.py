@@ -57,7 +57,7 @@ class Member(models.Model):
 class Work(models.Model):
     name = models.CharField(max_length=20, verbose_name=u'名称')
     image = models.ImageField(verbose_name=u'图片')
-    url = models.SlugField(verbose_name=u'网址')
+    url = models.URLField(verbose_name=u'网址')
 
     class Meta:
         verbose_name = u'作品'
