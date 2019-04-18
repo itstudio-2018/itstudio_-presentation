@@ -50,6 +50,9 @@ class Member(models.Model):
     def __str__(self):
         return self.name
 
+    def get_department(self):
+        return self.department.name
+
 
 class Work(models.Model):
     name = models.CharField(max_length=20, verbose_name=u'名称')
