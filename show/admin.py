@@ -18,7 +18,7 @@ class StoryAdmin(admin.ModelAdmin):
 
 @admin.register(models.Member)
 class MemberAdmin(admin.ModelAdmin):
-    list_display = ('name', 'year', 'department__name')
+    list_display = ('name', 'year', 'department')
     list_filter = ('year',)
     search_fields = ('name',)
     ordering = ('-year',)

@@ -39,7 +39,7 @@ class Story(models.Model):
 class Member(models.Model):
     name = models.CharField(max_length=10, verbose_name=u'姓名')
     department = models.ForeignKey(Department, verbose_name=u'部门')
-    year = models.ImageField(verbose_name=u'年级')
+    year = models.IntegerField(verbose_name=u'年级')
     image = models.ImageField(verbose_name=u'图片', upload_to='')
     info = models.CharField(max_length=100, verbose_name=u'介绍')
 
