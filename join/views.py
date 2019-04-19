@@ -38,7 +38,7 @@ def send(request):
         send_mail('爱特工作室',
                   msg,
                   settings.EMAIL_FROM,
-                  email,
+                  list(email),
                   html_message=msg)
 
         content['status'] = 'ok'
