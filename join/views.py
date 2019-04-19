@@ -38,8 +38,8 @@ def send(request):
         send_mail('爱特工作室',
                   msg,
                   settings.EMAIL_FROM,
-                  list(email),
-                  html_message=msg)
+                  [email],)
+
 
         content['status'] = 'ok'
 
