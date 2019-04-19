@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.core.paginator import Paginator
 from . import models
 import json
+import re
 
 
 def response_success(content):
@@ -176,3 +177,51 @@ def get_comment_list(request):
         return response_success(content)
     else:
         return HttpResponse(status=404)
+
+
+def comment(request):
+    if request.method == 'POST':
+        content = {'status': ''}
+
+        try:
+            json_data = json.loads(request.body)
+        except:
+            json_data = {}
+        if not json_data:
+            content['status'] = 'json_error'
+            return response_error(content)
+
+        try:
+            nickname = json_data['nickname']
+            if re.search(r' ', nickname) or len(nickname) > 10:
+                nickname = ''
+        except:
+            nickname = ''
+        if not nickname:
+            content['status'] = 'nickname_error'
+            return response_error(content)
+
+        try:
+            head_image = int(json_data['head_image'])
+        except:
+            head_image = 0
+        if not head_image:
+            content['status'] = 'head_image_error'
+            return response_error(content)
+
+        try:
+            information = json_data['content']
+        except:
+            information = ''
+        if not information:
+            content['status'] = 'content_error'
+            return response_error(content)
+
+        models.Comment(nickname=nickname, head_image=head_image, content=information).save()
+        content['status'] = 'ok'
+
+        return response_success(content)
+    else:
+        return HttpResponse(status=404)
+
+
