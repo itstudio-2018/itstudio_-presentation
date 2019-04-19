@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.paginator import Paginator
+from django.views.decorators.csrf import csrf_exempt
 from . import models
 import json
 import re
@@ -179,6 +180,7 @@ def get_comment_list(request):
         return HttpResponse(status=404)
 
 
+@csrf_exempt
 def comment(request):
     if request.method == 'POST':
         content = {'status': ''}
