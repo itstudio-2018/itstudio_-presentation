@@ -40,7 +40,6 @@ def send(request):
                   settings.EMAIL_FROM,
                   [email],)
 
-
         content['status'] = 'ok'
 
         return response_success(content)
