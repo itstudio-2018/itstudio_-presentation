@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^api/send/', views.send),
+    url(r'^api/apply/', views.apply),
 ]
