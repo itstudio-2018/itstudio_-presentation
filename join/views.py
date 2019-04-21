@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.conf import settings
 from django.core.mail import send_mail
+from django.views.decorators.csrf import csrf_exempt
 
 from . import models
 import json
@@ -35,6 +36,7 @@ def send(email):
               [email],)
 
 
+@csrf_exempt
 def apply(request):
     if request.method == 'POST':
         content = {'status': ''}
