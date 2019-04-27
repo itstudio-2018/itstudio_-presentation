@@ -38,7 +38,7 @@ def send(email):
 
     models.Link(email=email, code=code).save()
 
-    msg = 'http://39.96.208.176/join/confirm/' + '?email=' + email + '&code=' + 'code'
+    msg = 'http://39.96.208.176/join/confirm/' + '?email=' + email + '&code=' + code
     send_mail('爱特工作室',
               msg,
               settings.EMAIL_FROM,
