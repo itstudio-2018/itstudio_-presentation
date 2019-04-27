@@ -7,6 +7,8 @@ from django.views.decorators.csrf import csrf_exempt
 from . import models
 import json
 import re
+import random
+import datetime
 
 
 def response_success(content):
@@ -29,11 +31,59 @@ def response_error(content):
 
 def send(email):
     # msg code
-    msg = 'Hello world'
+    code = ''
+    base_str = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789'
+    for i in range(20):
+        code += base_str[random.randint(0, 62)]
+
+    models.Link(email=email, code=code).save()
+
+    msg = 'http://39.96.208.176/join/confirm/' + '?email=' + email + '&code=' + 'code'
     send_mail('爱特工作室',
               msg,
               settings.EMAIL_FROM,
               [email],)
+
+
+def confirm(request):
+    if request.method == 'GET':
+        try:
+            email = request.GET.get('email')
+        except:
+            email = ''
+        if not email:
+            return HttpResponse(status=404)
+
+        try:
+            code = request.GET.get('code')
+        except:
+            code = ''
+        if not code:
+            return HttpResponse(status=404)
+
+        link = models.Link.objects.filter(email=email, code=code)
+        if not link:
+            return HttpResponse(status=404)
+        link = link[0]
+
+        if link.expiration.replace(tzinfo=None) + datetime.timedelta(hours=8, minutes=10) < \
+                datetime.datetime.now().replace(tzinfo=None):
+            return HttpResponse(status=404)
+
+        applicant = models.Applicant.objects.filter(email=email)
+        if not applicant:
+            return HttpResponse(status=404)
+        applicant = applicant[0]
+
+        applicant.status = 1
+        applicant.save()
+
+        link.delete()
+
+        return HttpResponse(status=200)
+
+    else:
+        return HttpResponse(status=404)
 
 
 @csrf_exempt
