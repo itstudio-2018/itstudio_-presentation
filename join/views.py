@@ -34,7 +34,7 @@ def send(email):
     code = ''
     base_str = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789'
     for i in range(20):
-        code += base_str[random.randint(0, 62)]
+        code += base_str[random.randint(0, 61)]
 
     models.Link(email=email, code=code).save()
 
