@@ -32,7 +32,7 @@ class ApplicantAdmin(admin.ModelAdmin):
         queryset.update(status=-1)
     status_false.short_description = '刷下'
 
-    def save_excel(self, request):
+    def save_excel(self, request, queryset):
         filename = 'information'
         workbook = xlwt.Workbook(encoding='utf-8')
         worksheet = workbook.add_sheet('main')
