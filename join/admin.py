@@ -1,5 +1,7 @@
 from django.contrib import admin
 from . import models
+from django.http import StreamingHttpResponse
+import xlwt
 
 
 @admin.register(models.Applicant)
@@ -30,7 +32,54 @@ class ApplicantAdmin(admin.ModelAdmin):
         queryset.update(status=-1)
     status_false.short_description = '刷下'
 
-    actions = [status_1, status_2, status_3, status_4]
+    def save_excel(self, request):
+        filename = 'information'
+        workbook = xlwt.Workbook(encoding='utf-8')
+        worksheet = workbook.add_sheet('main')
+
+        all_information = models.Applicant.objects.all()
+
+        worksheet.write(0, 0, label='姓名')
+        worksheet.col(0).width = 5000
+        worksheet.write(0, 1, label='手机号')
+        worksheet.col(1).width = 5000
+        worksheet.write(0, 2, label='邮箱')
+        worksheet.col(2).width = 5000
+        worksheet.write(0, 3, label='年级')
+        worksheet.write(0, 4, label='学院')
+        worksheet.write(0, 5, label='专业')
+        worksheet.write(0, 6, label='状态')
+
+        i = 1
+        for one in all_information:
+            worksheet.write(i, 0, label=one.name)
+            worksheet.write(i, 1, label=one.phone_number)
+            worksheet.write(i, 2, label=one.email)
+            worksheet.write(i, 3, label=one.year)
+            worksheet.write(i, 4, label=one.college)
+            worksheet.write(i, 5, label=one.speciality)
+            worksheet.write(i, 6, label=one.status)
+
+            i = i + 1
+
+        workbook.save("%s" % filename)
+
+        def file_iterator(filename, chunk_size=512):
+            with open(filename, 'rb') as f:
+                while True:
+                    c = f.read(chunk_size)
+                    if c:
+                        yield c
+                    else:
+                        break
+
+        response = StreamingHttpResponse(file_iterator(filename))
+        response['Content-Type'] = 'application/octet-stream'
+        response['Content-Disposition'] = 'attachment; filename="{}" '.format("Result.xls")
+        return response
+    save_excel.short_description = '导入Excel表格'
+
+    actions = [status_1, status_2, status_3, status_4, status_false, save_excel]
 
 
 @admin.register(models.Link)
