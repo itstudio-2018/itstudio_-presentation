@@ -4,6 +4,7 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.views.decorators.csrf import csrf_exempt
 
+
 from . import models
 import json
 import re
@@ -35,6 +36,9 @@ def send(email):
     base_str = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789'
     for i in range(20):
         code += base_str[random.randint(0, 61)]
+
+    if models.Link.objects.filter(email=email):
+        models.Link.objects.filter(email=email).delete()
 
     models.Link(email=email, code=code).save()
 
@@ -123,6 +127,11 @@ def apply(request):
             content['status'] = 'phone_error'
             return response_error(content)
 
+        if models.Applicant.objects.filter(phone_number=phone_number):
+            if models.Applicant.objects.filter(phone_number=phone_number)[0].status != 0:
+                content['status'] = 'phone_error'
+                return response_error(content)
+
         try:
             email = json_data['email']
         except:
@@ -134,6 +143,11 @@ def apply(request):
         if not re.search(r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$', email):
             content['status'] = 'email_error'
             return response_error(content)
+
+        if models.Applicant.objects.filter(email=email):
+            if models.Applicant.objects.filter(email=email)[0].status != 0:
+                content['status'] = 'email_error'
+                return response_error(content)
 
         try:
             year = int(json_data['year'])
