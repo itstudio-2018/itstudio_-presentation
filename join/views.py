@@ -209,6 +209,7 @@ def get_status(request):
             content['status'] = 'msg_error'
             return response_error(content)
 
+        content['status'] = 'ok'
         content['situation'] = applicant[0].status
 
         return response_success(content)
