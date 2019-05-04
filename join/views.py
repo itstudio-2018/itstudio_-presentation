@@ -188,3 +188,31 @@ def apply(request):
     else:
         return HttpResponse(status=404)
 
+
+def get_status(request):
+    if request.method == 'GET':
+        content = {'status': ''}
+
+        try:
+            email = request.GET.get('email')
+        except:
+            email = ''
+        if not email:
+            content['status'] = 'email_error'
+
+        if not re.search(r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$', email):
+            content['status'] = 'email_error'
+            return response_error(content)
+
+        applicant = models.Applicant.objects.filter(email=email)
+        if not applicant:
+            content['status'] = 'msg_error'
+            return response_error(content)
+
+        content['situation'] = applicant[0].status
+
+        return response_success(content)
+    else:
+        return HttpResponse(status=404)
+
+
