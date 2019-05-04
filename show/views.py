@@ -136,37 +136,44 @@ def get_work(request):
         return HttpResponse(status=404)
 
 
-def get_comment_list(request):
+def comment_list(request):
     if request.method == 'GET':
-        content = {'status': 'ok', 'list': [],
-                   'total_num': 0, 'num_per_page': 10, 'num_in_page': 0,
-                   'page': 0, 'total_page': 0}
+        content = {'status': '', 'list': []}
+
         try:
-            page = int(request.GET.get('page', default='1'))
+            last = int(request.GET.get('last'))
         except:
-            page = 0
-        if not page:
-            content['status'] = 'page_error'
+            begin = len(models.Comment.objects.all()) - 1
+            these = models.Comment.objects.all().order_by('-time')[:10]
+            content['num'] = len(these)
+            content['begin'] = begin
+            content['last'] = begin - len(these) + 1
+            for one in these:
+                content['list'].append({
+                    'nickname': one.nickname,
+                    'head_image': one.head_image,
+                    'content': one.content,
+                    'time': str(one.time.strftime('%Y-%m-%d %H:%M:%S')),
+                    'reply': one.reply,
+                })
+
+            content['status'] = 'ok'
+
+            return response_success(content)
+
+        begin = last - 1
+        if begin < 0:
+            content['status'] = 'end_error'
             return response_error(content)
 
-        all_comment_list = models.Comment.objects.all().order_by('-time')
-        content['total_num'] = len(all_comment_list)
+        if begin > len(models.Comment.objects.all()) - 1:
+            begin = len(models.Comment.objects.all()) - 1
 
-        paginator = Paginator(all_comment_list, 10)
-
-        total_page = paginator.num_pages
-        content['total_page'] = total_page
-        if page > total_page:
-            page = total_page
-        if page < 1:
-            page = 1
-
-        page_of_list = paginator.page(page).object_list
-        content['page'] = page
-
-        content['num_in_page'] = len(page_of_list)
-
-        for one in page_of_list:
+        these = models.Comment.objects.all().order_by('-time')[len(models.Comment.objects.all()) - 1 - begin:][:10]
+        content['num'] = len(these)
+        content['begin'] = begin
+        content['last'] = begin - len(these) + 1
+        for one in these:
             content['list'].append({
                 'nickname': one.nickname,
                 'head_image': one.head_image,
@@ -174,6 +181,8 @@ def get_comment_list(request):
                 'time': str(one.time.strftime('%Y-%m-%d %H:%M:%S')),
                 'reply': one.reply,
             })
+
+        content['status'] = 'ok'
 
         return response_success(content)
     else:
