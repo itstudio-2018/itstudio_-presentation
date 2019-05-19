@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-c=27(ki&y2m=b4(-*^tr5@)_a!t8ez=kynv1op*0%he8q=wbr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -123,7 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/root/project/presentation/static/'
 STATICFILES_DIRS = [
     'static',
     ]
@@ -138,9 +138,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = (
-    '*'
-)
+#CORS_ORIGIN_WHITELIST = (
+#    '*'
+#)
 
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 465

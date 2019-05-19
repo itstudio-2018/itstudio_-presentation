@@ -31,4 +31,5 @@ urlpatterns = [
     url(r'^dist/(.+)', general.dist_redirect),
     url(r'^templates/(.+)', general.templates_redirect)
 ]   \
-              + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+              + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
+	      + static(settings.STATIC_URL)
