@@ -17,11 +17,18 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf.urls.static import static
 from . import settings
+from show.views import index_html
+from . import general
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^show/', include('show.urls', namespace='show')),
-    url(r'^join/', include('join.urls', namespace='join'))
-]
+    url(r'^join/', include('join.urls', namespace='join')),
+    url(r'^$', index_html),
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    url(r'^js/(.+)', general.js_redirect),
+    url(r'^css/(.+)', general.css_redirect),
+    url(r'^dist/(.+)', general.dist_redirect),
+    url(r'^templates/(.+)', general.templates_redirect)
+]   \
+              + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

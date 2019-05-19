@@ -7,6 +7,10 @@ import json
 import re
 
 
+def index_html(request):
+    return render(request, 'dist/index.html')
+
+
 def response_success(content):
     content = json.dumps(content)
     return HttpResponse(content,
