@@ -1,0 +1,162 @@
+.message{
+    height: 1022px;
+    width: 100%;
+    .messageLine{
+        height: 701px;
+        width: 100%;
+        position: relative;
+        top: 159px;
+        background-color: #FBE5C5;
+        .messageBox{
+            margin: 0 auto;
+            height: 475px;
+            width: 1305px;
+            position: relative;
+            top: 70px;
+        }
+    }
+}
+
+//左侧评论展示窗口
+.messageBoxShow{
+    float: left;
+    height: 475px;
+    width: 604px;
+    h4{
+        position: relative;
+        top: 75px;
+        text-align: center;
+        font-size:24px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(12,12,12,1);
+        opacity:0.95;
+    }
+    .showBody{
+        height: 320px;
+        position: relative;
+        top: 128px;
+        overflow: hidden;
+        max-width: 100%;
+        outline: none;
+        background-color: #FFF6E7;
+        .showBodyContainer{
+            overflow: hidden;
+            height: auto;
+            width: auto;
+        }
+        .showBodyScrollbar{
+            width: 7px;
+            height: 100%;
+            position: absolute;
+            right: 0px;
+            background-color: #F3DCB4;
+            .scrollbarBlock{
+                width:7px;
+                height:48px;
+                border-radius:4px;
+                
+                background-color: #E3CCA3;
+            }
+        }
+    }
+}
+
+//右侧提交评论窗口
+.messageBoxPush{
+    float: left;
+    height: 100%;
+    width: 669px;
+    position: relative;
+    left: 52px;
+    .messageWhiteFrame{
+        width:242px;
+        height:203px;
+        position: absolute;
+        right: 0px;
+        border:8px solid rgba(255,255,255,1);
+        opacity:0.9;
+        font-size:36px;
+        font-family:MicrosoftYaHei;
+        color:rgba(12,12,12,1);
+        opacity:0.9;
+        h3{
+            position: relative;
+            left: -69px;
+            top: 23px;
+            font-weight: 400;
+        }
+    }
+    .messageWrite{
+        width:608px;
+        height:326px;
+        position: relative;
+        top: 155px;
+        background-color: #FBFAF9;
+        box-shadow:1px 5px 50px 0px rgba(196,178,151,0.2);
+        border-radius:10px;
+        h4{
+            text-align: center;
+            position: relative;
+            top: 28px;
+            font-size:24px;
+            font-family:MicrosoftYaHei;
+            font-weight:400;
+        }
+        .messageText{
+            width:510px;
+            height:133px;
+            position: relative;
+            top: 46px;left: 46px;
+            border:2px solid rgba(249,226,194,1);
+            opacity:0.8;
+            border-radius:10px;
+            textarea{
+                border-style: none;
+                margin-left: 5px;
+                margin-top: 1px;
+                height: 130px;
+                width: 500px;
+            }
+        }
+        .messageFooter{
+            position: relative;
+            top: 64px;
+            .verifyTip{
+                float: left;
+                margin-left: 48px;
+            }
+            .verify{
+                float: left;
+                clear: both;
+                margin-left: 48px;
+                width:98px;
+                height:31px;
+                border:1px solid rgba(251,229,197,1);
+                border-radius:5px;
+                input{
+                    height: 30px;
+                    width: 98px;
+                    border-style: none;
+                }
+            }
+            .verify_img{
+                float: left;
+            }
+            .submit{
+                float: right;
+                border-style: none;
+                margin-right: 53px;
+                width:128px;
+                height:39px;
+                background:rgba(250,213,158,1);
+                box-shadow:-2px 2px 40px 10px rgba(63,63,63,0.06);
+                border-radius:5px;
+                font-size:18px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(255,255,255,1);
+            }
+        }
+    }
+}

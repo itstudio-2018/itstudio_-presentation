@@ -1,0 +1,40 @@
+.event {
+  width: 100%;
+  height: 701px;
+  background-color: #FBE5C5; }
+  .event .eventBox {
+    height: 473px;
+    width: 1328px;
+    margin: 0 auto;
+    position: relative;
+    top: 98px; }
+    .event .eventBox .eventTitle {
+      height: 336px;
+      width: 480px;
+      position: relative; }
+      .event .eventBox .eventTitle .eventWhiteFrame {
+        width: 222px;
+        height: 183px;
+        position: relative;
+        top: 61px;
+        border: 8px solid white;
+        opacity: 0.9; }
+        .event .eventBox .eventTitle .eventWhiteFrame h3 {
+          position: relative;
+          top: 54px;
+          left: 200px;
+          font-size: 36px;
+          font-family: MicrosoftYaHei;
+          font-weight: 400;
+          color: #0c0c0c;
+          opacity: 0.95; }
+      .event .eventBox .eventTitle div {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 336px;
+        height: 24px;
+        color: #030303;
+        opacity: 0.95; }
+
+/*# sourceMappingURL=events..css.map */
