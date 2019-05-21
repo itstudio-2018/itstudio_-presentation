@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 from . import models
+from show.models import Department
 import json
 import re
 import random
@@ -173,12 +174,28 @@ def apply(request):
             content['status'] = 'speciality_error'
             return response_error(content)
 
+        try:
+            department_id = json_data['department_id']
+        except:
+            department_id = 0
+        if not department_id:
+            content['status'] = 'id_error'
+            return response_error(content)
+
+        the_department = Department.objects.filter(id=department_id)
+        if not the_department:
+            content['status'] = 'id_error'
+            return response_error(content)
+        the_department = the_department[0]
+
         models.Applicant(name=name,
                          phone_number=phone_number,
                          email=email,
                          year=year,
                          college=college,
-                         speciality=speciality).save()
+                         speciality=speciality,
+                         department=the_department
+                         ).save()
 
         send(email)
 

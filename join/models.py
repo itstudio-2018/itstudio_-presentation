@@ -1,4 +1,5 @@
 from django.db import models
+from show.models import Department
 
 
 class Applicant(models.Model):
@@ -8,6 +9,7 @@ class Applicant(models.Model):
     year = models.IntegerField(verbose_name=u'年级')
     college = models.CharField(max_length=20, verbose_name=u'学院')
     speciality = models.CharField(max_length=20, verbose_name=u'专业')
+    department = models.ForeignKey(Department, verbose_name=u'意向部门')
 
     status_choice = (
         (-1, '未通过'),

@@ -33,5 +33,5 @@ class WorkAdmin(admin.ModelAdmin):
 
 @admin.register(models.Comment)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ('nickname', 'content', 'reply')
+    list_display = ('content', 'reply')
     ordering = ('-time',)
