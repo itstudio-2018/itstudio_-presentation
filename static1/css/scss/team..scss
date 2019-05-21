@@ -1,0 +1,303 @@
+.team{
+    margin: 0 auto;
+    width:1328px;
+    height:809px;
+    position: relative;
+    top: 29px;
+    background:rgba(253,248,240,1);
+    box-shadow:6px 4px 84px 33px rgba(3,3,3,0.08);
+    div{
+        margin: 0 auto;
+    }
+    .teamTitle{
+        text-indent: -55px;
+        width:77px;
+        height:40px;
+        position: relative;
+        top: 39px;
+        font-size:30px;
+        color:rgba(3,3,3,1);
+        opacity:0.9;
+        border-bottom: 6px solid #FAD7A4;
+        font-family:MicrosoftYaHei;
+        font-weight: 100;
+    }
+    .teams{
+        width:1112px;
+        height:637px;
+        position: relative;
+        top: 60px;
+        .teamBackground{
+            height: 100%;
+            width: 100%;
+            float: left;
+            position: absolute;
+            z-index: 0;
+        }
+    }
+}
+
+//左侧蒙版
+.teamLeft{
+    height: 0px;
+    width: 432px;
+    border-bottom: 628px solid rgba(3,3,3,0.3);
+    border-right: 259px solid transparent;
+    display: block;
+    position: absolute;
+    opacity: 0;
+}
+//右侧蒙版
+.teamRight{    
+    height: 0px;
+    width: 432px;
+    border-top: 628px solid rgba(3,3,3,0.3);
+    border-left: 259px solid transparent;
+    display: block;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+}
+
+
+//部门简介和各部门详情
+.Departments{
+    float: left;
+    width: 373px;
+    height: 542px;
+    position: relative;
+    top: 45px;
+    left: 62px;
+    text-align: center;
+    color: white;
+    display: none;
+    .DepartmentsTitle{   
+        text-indent: -70px;
+        width:77px;
+        height:40px;
+        font-size:30px;
+        opacity:0.9;
+        border-bottom: 6px solid #FAD7A4;
+    }
+    h4{
+        margin-top: 53px;
+        font-size:20px;
+        font-family:MicrosoftYaHei;
+        font-weight: 100;
+    }
+    p{
+        margin-top: 53px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+    .DepartmentsMore{
+        position: absolute;
+        bottom: 0px;left: 56px;;
+        width:265px;
+        height:55px;
+        background:rgba(250,213,158,1);
+        box-shadow:-2px 2px 40px 10px rgba(31,30,30,0.03);
+        line-height: 55px;
+        border-radius:10px;
+        cursor: pointer;
+    }
+}
+
+//社团详情
+.Definition{
+    float: right;
+    width: 373px;
+    height: 542px;
+    position: relative;
+    top: 45px;
+    right: 62px;
+    text-align: center;
+    color: white;
+    display: none;
+    .DefinitionTitle{   
+        text-indent: -50px;
+        width:77px;
+        height:40px;
+        font-size:30px;
+        opacity:0.9;
+        border-bottom: 6px solid #FAD7A4;
+    }
+    h4{
+        margin-top: 53px;
+        font-size:20px;
+        text-indent: -36px;
+        font-weight: 100;
+        font-family:MicrosoftYaHei;
+    }
+    p{
+        margin-top: 53px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+    .DefinitionMore{
+        position: absolute;
+        bottom: 0px;left: 56px;;
+        width:265px;
+        height:55px;
+        background:rgba(250,213,158,1);
+        box-shadow:-2px 2px 40px 10px rgba(31,30,30,0.03);
+        line-height: 55px;
+        border-radius:10px;
+        cursor: pointer;
+    }
+}
+//转圈圈
+.teamCircle{
+    margin: 0 auto;
+    height: 362px;
+    width: 94px;
+    div{
+        height: 94px;
+        width: 94px;
+        position: relative;
+        top: 268px;
+        border-radius: 47px;
+        background-color: #F7E8D4;
+    }
+    .rolling{
+        height: 70px;
+        width: 69px;
+        position: relative;
+        top: 12px;
+        left: 12px;
+    }
+    .rotate{
+        transform-origin: center center;
+        transform: rotate(180deg);
+        transition:transform 0.2s; 
+    }
+    .rotate1{
+        transform-origin: center center;
+        transform: rotate(360deg);
+        transition: transform 0.2s;
+    }
+}
+
+//点击部门（左侧）了解更多弹出细节卡片
+.DepartmentsDetail{
+    float: left;
+    height: 811px;
+    width:calc(100% - 100px);
+    min-width: 1090px;
+    background:rgba(254,232,196,1);
+    box-shadow:1px 2px 40px 10px rgba(5,5,5,0.05);
+    border-radius:10px;
+    position: absolute;
+    top: 300px;left: calc(100px - 100%);
+    .DepartmentsDetailTitle{
+        margin: 0 auto;
+        width:145px;
+        height:55px;
+        position: relative;
+        top: 48px;
+        h4{
+            font-size:36px;
+            font-family:MicrosoftYaHei;
+            font-weight:600;
+            color:rgba(3,3,3,1);
+            opacity:0.9;
+            text-align: center;
+        }
+        div{
+            margin: 0 auto;
+            width:77px;
+            height:6px;
+            background-color:#FAD7A4;
+        }
+    }
+}
+.detailBox{
+    height: 574px;
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    top: 94px;
+    .detailMenu{
+        height: 137px;
+        .departmentName{
+            width:138px;
+            height:137px;
+            float: left;
+            img{
+                width:125px;
+                height:124px;
+                position: relative;
+                left: 6px;
+            }
+            p{
+                position: relative;
+                top: -80px;
+                text-align: center;
+                font-size:22px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(253,252,252,1);
+            }
+        }
+        .departmentName1{
+            margin-left: 80px;
+        }
+        .departmentName2{
+            float: right;
+        }
+    }
+    .detailIntroduction{
+        width:990px;
+        height:360px;
+        background:rgba(251,250,249,1);
+        opacity:0.7;
+        border-radius:10px;
+        margin-top: 55px;
+    }
+}
+//点击社团（右侧）了解更多弹出细节卡片
+.DefinitionDetail{
+    float: left;
+    height: 811px;
+    width:calc(100% - 100px);
+    min-width: 1090px;
+    background:rgba(254,232,196,1);
+    box-shadow:1px 2px 40px 10px rgba(5,5,5,0.05);
+    border-radius:10px;
+    position: absolute;
+    top: 300px;left: calc(100px - 100%);
+    .DefinitionDetailTitle{
+        margin: 0 auto;
+        width:145px;
+        height:55px;
+        position: relative;
+        top: 120px;
+        h4{
+            font-size:36px;
+            font-family:MicrosoftYaHei;
+            font-weight:600;
+            color:rgba(3,3,3,1);
+            opacity:0.9;
+            text-align: center;
+        }
+        div{
+            margin: 0 auto;
+            width:77px;
+            height:6px;
+            background-color:#FAD7A4;
+        }    
+        h5{
+            font-size:24px;
+            font-family:MicrosoftYaHei;
+            font-weight:100;
+            color:rgba(3,3,3,1);
+            opacity:0.9;
+            white-space: nowrap;
+            text-indent: -210px;
+            margin-top: 40px;
+        }
+    }
+}
+.DefinitionBox{
+    height: 314px;
+}

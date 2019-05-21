@@ -45,7 +45,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -54,7 +53,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'it_presentation.urls'
@@ -126,13 +124,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/root/project/presentation/static/'
-STATICFILES_DIRS = [
-    'static',
-    ]
-STATIC_ROOT=os.path.join(BASE_DIR,"/static/")
-# STATICFILES_DIRS = (
-#        os.path.join(BASE_DIR, 'static/').replace('\\', '/'),
-# )
+#STATICFILES_DIRS = [
+#    'static',
+#    ]
+STATIC_ROOT=os.path.join(BASE_DIR,"static1/").replace('\\', '/')
+STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static/').replace('\\', '/'),
+ )
 
 MEDIA_URL = '/media/'
 
