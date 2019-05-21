@@ -45,7 +45,8 @@
     height: 124px;
     position: absolute;
     bottom: 68px;
-    left: 10px; }
+    left: 10px;
+    color: white; }
     .memberShow .teamBox img {
       float: left;
       position: absolute;
@@ -57,14 +58,17 @@
       top: 50px;
       height: 20px;
       width: 125px;
-      text-align: center; }
+      text-align: center;
+      user-select: none; }
     .memberShow .teamBox .teamName {
       width: 125px;
       height: 124px;
       float: left;
-      margin-right: 120px; }
+      margin-right: 120px;
+      cursor: pointer; }
     .memberShow .teamBox .teamName1 {
-      float: left; }
+      float: left;
+      cursor: pointer; }
       .memberShow .teamBox .teamName1 p {
         width: 125px;
         position: relative;
@@ -72,12 +76,14 @@
 
 #left {
   position: absolute;
-  top: 145px; }
+  top: 145px;
+  cursor: pointer; }
 
 #right {
   position: absolute;
   top: 145px;
-  right: 0px; }
+  right: 0px;
+  cursor: pointer; }
 
 ul#pictureBox {
   height: 236px;

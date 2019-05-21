@@ -53,10 +53,10 @@
             border-radius:10px;
             text-align: center;
             line-height: 55px;
-            p{
-                color: white;
-                font-size:21px;
-            }
+            cursor: pointer;
+            color: white;
+            font-size:21px;
+            user-select: none;
         }
     }
 }
@@ -65,7 +65,7 @@
 .worksDetail{    
     float: left;
     height: 811px;
-    width:calc(100% - 100px);
+    width:calc(100% - 60px);
     min-width: 1090px;
     background:rgba(254,232,196,1);
     box-shadow:1px 2px 40px 10px rgba(5,5,5,0.05);
@@ -81,4 +81,47 @@
         opacity:0.8;
         border-radius:10px;
     }
+    .pointerBox{
+        position: absolute;
+        bottom: 86px;
+        right: 48%;
+        width:80px;
+        height:39px;
+        .pointer{
+            float: left;
+            width:39px;
+            height:39px;
+            border-radius: 19px;
+            opacity:0.8;
+            text-align: center;
+            line-height: 39px;
+        }
+        .pointerColor{
+            background-color: #FCDBAB;
+        }
+    }
+}
+.workCard{
+    float: left;
+    width:342px;
+    height:164px;
+    margin-left: 75px;
+    margin-top: 60px;
+    .webPhoto{
+        width:342px;
+        height:164px;
+        box-shadow:-1px 1px 15px 7px rgba(0, 0, 0, 0.06);
+        img{width:342px;
+            height:164px;
+        }
+    }
+    center{
+        font-size:21px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(76,75,75,1);
+    }
+}
+.lineChange{
+    display: none;
 }

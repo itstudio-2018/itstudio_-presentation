@@ -68,9 +68,6 @@ class Work(models.Model):
 
 
 class Comment(models.Model):
-    nickname = models.CharField(max_length=10, verbose_name=u'昵称')
-    # 默认头像 选择
-    head_image = models.IntegerField(default=1, verbose_name=u'头像')
     content = models.CharField(max_length=100, verbose_name=u'内容')
     time = models.DateTimeField(auto_now_add=True, verbose_name=u'留言时间')
     reply = models.CharField(max_length=100, blank=True, verbose_name=u'回复')

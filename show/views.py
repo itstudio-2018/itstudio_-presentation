@@ -29,6 +29,23 @@ def response_error(content):
                         charset='utf-8')
 
 
+def get_department_list(request):
+    if request.method == 'GET':
+        content = {'status': 'ok', 'list': []}
+
+        departments = models.Department.objects.filter(is_alive=True)
+
+        content['num'] = len(departments)
+        for one in departments:
+            content['list'].append({
+                'id': one.id,
+                'name': one.name,
+            })
+
+    else:
+        return HttpResponse(status=404)
+
+
 def get_department(request):
     if request.method == 'GET':
         content = {'status': 'ok', 'num': 0, 'list': []}
@@ -47,7 +64,7 @@ def get_department(request):
         return response_success(content)
 
     else:
-        HttpResponse(status=404)
+        return HttpResponse(status=404)
 
 
 def get_story(request):
@@ -154,8 +171,6 @@ def comment_list(request):
             content['last'] = begin - len(these) + 1
             for one in these:
                 content['list'].append({
-                    'nickname': one.nickname,
-                    'head_image': one.head_image,
                     'content': one.content,
                     'time': str(one.time.strftime('%Y-%m-%d %H:%M:%S')),
                     'reply': one.reply,
@@ -179,8 +194,6 @@ def comment_list(request):
         content['last'] = begin - len(these) + 1
         for one in these:
             content['list'].append({
-                'nickname': one.nickname,
-                'head_image': one.head_image,
                 'content': one.content,
                 'time': str(one.time.strftime('%Y-%m-%d %H:%M:%S')),
                 'reply': one.reply,
@@ -207,24 +220,6 @@ def comment(request):
             return response_error(content)
 
         try:
-            nickname = json_data['nickname']
-            if re.search(r' ', nickname) or len(nickname) > 10:
-                nickname = ''
-        except:
-            nickname = ''
-        if not nickname:
-            content['status'] = 'nickname_error'
-            return response_error(content)
-
-        try:
-            head_image = int(json_data['head_image'])
-        except:
-            head_image = 0
-        if not head_image:
-            content['status'] = 'head_image_error'
-            return response_error(content)
-
-        try:
             information = json_data['content']
         except:
             information = ''
@@ -232,7 +227,7 @@ def comment(request):
             content['status'] = 'content_error'
             return response_error(content)
 
-        models.Comment(nickname=nickname, head_image=head_image, content=information).save()
+        models.Comment(content=information).save()
         content['status'] = 'ok'
 
         return response_success(content)

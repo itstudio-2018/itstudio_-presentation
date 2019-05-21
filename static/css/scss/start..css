@@ -24,6 +24,9 @@
     font-size: 49px;
     font-family: STXinwei;
     cursor: pointer; }
+    .nav .logo img {
+      width: 242px;
+      height: 62px; }
   .nav .menu {
     height: 37px;
     width: 560px;

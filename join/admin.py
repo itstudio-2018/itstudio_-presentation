@@ -49,6 +49,7 @@ class ApplicantAdmin(admin.ModelAdmin):
         worksheet.write(0, 4, label='学院')
         worksheet.write(0, 5, label='专业')
         worksheet.write(0, 6, label='状态')
+        worksheet.write(0, 7, label='意向部门')
 
         i = 1
         for one in all_information:
@@ -59,6 +60,7 @@ class ApplicantAdmin(admin.ModelAdmin):
             worksheet.write(i, 4, label=one.college)
             worksheet.write(i, 5, label=one.speciality)
             worksheet.write(i, 6, label=one.status)
+            worksheet.write(i, 7, label=one.department.name)
 
             i = i + 1
 

@@ -102,7 +102,10 @@
         margin-left: 5px;
         margin-top: 1px;
         height: 130px;
-        width: 500px; }
+        width: 500px;
+        resize: none;
+        outline: none;
+        font-size: 23px; }
     .messageBoxPush .messageWrite .messageFooter {
       position: relative;
       top: 64px; }
@@ -122,7 +125,8 @@
           width: 98px;
           border-style: none; }
       .messageBoxPush .messageWrite .messageFooter .verify_img {
-        float: left; }
+        float: left;
+        cursor: pointer; }
       .messageBoxPush .messageWrite .messageFooter .submit {
         float: right;
         border-style: none;
@@ -135,6 +139,7 @@
         font-size: 18px;
         font-family: MicrosoftYaHei;
         font-weight: 400;
-        color: white; }
+        color: white;
+        cursor: pointer; }
 
 /*# sourceMappingURL=message..css.map */
