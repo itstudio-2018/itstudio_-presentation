@@ -54,6 +54,7 @@
         height:124px;
         position: absolute;
         bottom: 68px;left: 10px;
+        color: white;
         img{
             float: left;
             position: absolute;
@@ -67,15 +68,18 @@
             height: 20px;
             width: 125px;
             text-align: center;
+            user-select: none;
         }
         .teamName{
             width: 125px;
             height: 124px;
             float: left;
             margin-right: 120px;
+            cursor: pointer;
         }
         .teamName1{
             float: left;
+            cursor: pointer;
             p{
                 width: 125px;
                 position: relative;
@@ -87,10 +91,12 @@
 #left{
     position: absolute;
     top: 145px;
+    cursor: pointer;
 }
 #right{
     position: absolute;
     top: 145px;right: 0px;
+    cursor: pointer;
 }
 ul#pictureBox{
     height: 236px;

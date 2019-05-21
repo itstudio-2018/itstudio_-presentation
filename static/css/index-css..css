@@ -24,6 +24,9 @@
     font-size: 49px;
     font-family: STXinwei;
     cursor: pointer; }
+    .nav .logo img {
+      width: 242px;
+      height: 62px; }
   .nav .menu {
     height: 37px;
     width: 560px;
@@ -92,6 +95,9 @@
 
 body {
   background-color: #FFEBC9; }
+
+input {
+  outline: none; }
 
 .header {
   width: 70%;
@@ -427,7 +433,8 @@ body {
     height: 124px;
     position: absolute;
     bottom: 68px;
-    left: 10px; }
+    left: 10px;
+    color: white; }
     .memberShow .teamBox img {
       float: left;
       position: absolute;
@@ -439,14 +446,17 @@ body {
       top: 50px;
       height: 20px;
       width: 125px;
-      text-align: center; }
+      text-align: center;
+      user-select: none; }
     .memberShow .teamBox .teamName {
       width: 125px;
       height: 124px;
       float: left;
-      margin-right: 120px; }
+      margin-right: 120px;
+      cursor: pointer; }
     .memberShow .teamBox .teamName1 {
-      float: left; }
+      float: left;
+      cursor: pointer; }
       .memberShow .teamBox .teamName1 p {
         width: 125px;
         position: relative;
@@ -454,12 +464,14 @@ body {
 
 #left {
   position: absolute;
-  top: 145px; }
+  top: 145px;
+  cursor: pointer; }
 
 #right {
   position: absolute;
   top: 145px;
-  right: 0px; }
+  right: 0px;
+  cursor: pointer; }
 
 ul#pictureBox {
   height: 236px;
@@ -528,15 +540,16 @@ ul#pictureBox {
       box-shadow: -2px 2px 40px 10px rgba(63, 63, 63, 0.06);
       border-radius: 10px;
       text-align: center;
-      line-height: 55px; }
-      .work .workBox .moreWorks p {
-        color: white;
-        font-size: 21px; }
+      line-height: 55px;
+      cursor: pointer;
+      color: white;
+      font-size: 21px;
+      user-select: none; }
 
 .worksDetail {
   float: left;
   height: 811px;
-  width: calc(100% - 100px);
+  width: calc(100% - 60px);
   min-width: 1090px;
   background: #fee8c4;
   box-shadow: 1px 2px 40px 10px rgba(5, 5, 5, 0.05);
@@ -552,6 +565,44 @@ ul#pictureBox {
     background: #fbfaf9;
     opacity: 0.8;
     border-radius: 10px; }
+  .worksDetail .pointerBox {
+    position: absolute;
+    bottom: 86px;
+    right: 48%;
+    width: 80px;
+    height: 39px; }
+    .worksDetail .pointerBox .pointer {
+      float: left;
+      width: 39px;
+      height: 39px;
+      border-radius: 19px;
+      opacity: 0.8;
+      text-align: center;
+      line-height: 39px; }
+    .worksDetail .pointerBox .pointerColor {
+      background-color: #FCDBAB; }
+
+.workCard {
+  float: left;
+  width: 342px;
+  height: 164px;
+  margin-left: 75px;
+  margin-top: 60px; }
+  .workCard .webPhoto {
+    width: 342px;
+    height: 164px;
+    box-shadow: -1px 1px 15px 7px rgba(0, 0, 0, 0.06); }
+    .workCard .webPhoto img {
+      width: 342px;
+      height: 164px; }
+  .workCard center {
+    font-size: 21px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #4c4b4b; }
+
+.lineChange {
+  display: none; }
 
 .event {
   width: 100%;
@@ -696,7 +747,10 @@ ul#pictureBox {
         margin-left: 5px;
         margin-top: 1px;
         height: 130px;
-        width: 500px; }
+        width: 500px;
+        resize: none;
+        outline: none;
+        font-size: 23px; }
     .messageBoxPush .messageWrite .messageFooter {
       position: relative;
       top: 64px; }
@@ -716,7 +770,8 @@ ul#pictureBox {
           width: 98px;
           border-style: none; }
       .messageBoxPush .messageWrite .messageFooter .verify_img {
-        float: left; }
+        float: left;
+        cursor: pointer; }
       .messageBoxPush .messageWrite .messageFooter .submit {
         float: right;
         border-style: none;
@@ -729,7 +784,8 @@ ul#pictureBox {
         font-size: 18px;
         font-family: MicrosoftYaHei;
         font-weight: 400;
-        color: white; }
+        color: white;
+        cursor: pointer; }
 
 .footer {
   width: 100%;
