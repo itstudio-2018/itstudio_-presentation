@@ -129,7 +129,7 @@ STATIC_URL = '/root/project/presentation/static/'
 STATICFILES_DIRS = [
     'static',
     ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static/').replace('\\', '/')
+STATIC_ROOT=os.path.join(BASE_DIR,"/static/")
 # STATICFILES_DIRS = (
 #        os.path.join(BASE_DIR, 'static/').replace('\\', '/'),
 # )
@@ -151,13 +151,10 @@ EMAIL_HOST_PASSWORD = 'it2018'
 EMAIL_USE_SSL = True
 EMAIL_FROM = '15563709699@163.com'
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "CONNECTION_POOL_KWARGS": {"max_connections": 100}
-        }
-    }
-}　　
+#CACHES = {
+#    "default": {
+#    	"BACKEND": "django_redis.cache.RedisCache",
+#        "LOCATION": "redis://127.0.0.1:6379",
+#        "OPTIONS": {
+#        "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#        "CONNECTION_POOL_KWARGS": {"max_connections": 100}}}}　　
