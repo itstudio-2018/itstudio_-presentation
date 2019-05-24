@@ -6,6 +6,8 @@ from . import models
 import json
 import re
 
+import logging
+info_log = logging.getLogger('info')
 
 def index_html(request):
     return render(request, 'dist/index.html')
