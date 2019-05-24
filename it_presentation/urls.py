@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^js/(.+)', general.js_redirect),
     url(r'^css/(.+)', general.css_redirect),
     url(r'^dist/(.+)', general.dist_redirect),
-    url(r'^templates/(.+)', general.templates_redirect)
+    url(r'^templates/(.+)', general.templates_redirect),
+    url(r'^media/(.+)', general.media_redirect)
 ]   \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
