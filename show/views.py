@@ -42,6 +42,7 @@ def get_department_list(request):
                 'name': one.name,
             })
 
+        return response_success(content)
     else:
         return HttpResponse(status=404)
 
