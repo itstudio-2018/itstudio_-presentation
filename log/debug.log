@@ -1,0 +1,44 @@
+2019-05-24 11:18:20,095 [uWSGIWorker2Core0:140092992440384] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /show/api/department_list/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./show/views.py", line 36, in get_department_list
+    info_log.info("get_department_list() call ip:{}") % request.META['HTTP_X_FORWARDED_FOR']
+KeyError: 'HTTP_X_FORWARDED_FOR'
+2019-05-24 11:18:22,144 [uWSGIWorker4Core0:140092992440384] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /show/api/department_list/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./show/views.py", line 36, in get_department_list
+    info_log.info("get_department_list() call ip:{}") % request.META['HTTP_X_FORWARDED_FOR']
+KeyError: 'HTTP_X_FORWARDED_FOR'
+2019-05-24 11:18:45,027 [uWSGIWorker2Core0:140092992440384] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /show/api/department_list/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./show/views.py", line 36, in get_department_list
+    info_log.info("get_department_list() call ip:{}") % request.META['HTTP_X_FORWARDED_FOR']
+KeyError: 'HTTP_X_FORWARDED_FOR'
+2019-05-24 11:21:41,852 [uWSGIWorker4Core0:140128957593664] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /show/api/department_list/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./show/views.py", line 36, in get_department_list
+    info_log.info("get_department_list() call ip:%s") % request.META['HTTP_X_FORWARDED_FOR']
+KeyError: 'HTTP_X_FORWARDED_FOR'
