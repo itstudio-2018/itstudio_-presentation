@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .event {
   width: 100%;
   height: 701px;
@@ -9,9 +10,10 @@
     position: relative;
     top: 98px; }
     .event .eventBox .eventTitle {
-      height: 336px;
+      height: 386px;
       width: 480px;
-      position: relative; }
+      position: relative;
+      float: left; }
       .event .eventBox .eventTitle .eventWhiteFrame {
         width: 222px;
         height: 183px;
@@ -35,6 +37,61 @@
         width: 336px;
         height: 24px;
         color: #030303;
-        opacity: 0.95; }
+        opacity: 0.95;
+        font-size: 24px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: #030303; }
+
+.events {
+  float: left;
+  height: 472px;
+  width: 753px;
+  margin-left: 95px; }
+  .events .eventsLineBox {
+    float: left;
+    width: 153px;
+    height: 472xp; }
+    .events .eventsLineBox ul {
+      float: left;
+      width: 116px;
+      margin-top: 32px; }
+      .events .eventsLineBox ul li {
+        height: 75px;
+        line-height: 75px; }
+    .events .eventsLineBox .eventsLine {
+      float: left;
+      position: relative;
+      left: -65px;
+      width: 7px;
+      height: 472px;
+      background: linear-gradient(0deg, #fbe5c5, #fbd786, #fbe5c5);
+      opacity: 0.75; }
+    .events .eventsLineBox .gradeArrow {
+      float: left;
+      width: 30px;
+      height: 26px;
+      background-image: url("../../templates/tuya_huabanfuben.png");
+      background-color: yellow;
+      position: relative;
+      left: -50px; }
+  .events .eventsDetail {
+    float: left;
+    height: 473px;
+    width: 600px;
+    position: relative;
+    top: -15px; }
+    .events .eventsDetail ul li {
+      float: right;
+      width: 568px;
+      height: 100px;
+      background: #fbe2b5;
+      box-shadow: -2px 2px 40px 10px rgba(63, 63, 63, 0.06);
+      margin-top: 15px; }
+    .events .eventsDetail ul .eventsBackground {
+      width: 600px;
+      height: 122px;
+      background-image: url("../../templates/图层 9.png");
+      background-size: 100% 100%; }
 
 /*# sourceMappingURL=events..css.map */
