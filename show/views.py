@@ -33,7 +33,7 @@ def response_error(content):
 
 def get_department_list(request):
     if request.method == 'GET':
-        info_log.info("get_department_list() call ip: " + str(request.META.get('HTTP_X_FORWARDED_FOR')))
+        info_log.info("get_department_list() call ip: " + str(request.META.get('REMOTE_ADDR')))
         content = {'status': 'ok', 'list': []}
 
         departments = models.Department.objects.filter(is_alive=True)
