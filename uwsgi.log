@@ -6415,3 +6415,87 @@ WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xdbfa20 pid: 5256 
 [pid: 5255|app: 0|req: 77/337] 211.64.159.116 () {48 vars in 951 bytes} [Fri May 24 10:26:17 2019] GET /admin/ => generated 8898 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
 [pid: 5253|app: 0|req: 112/338] 211.64.159.116 () {44 vars in 782 bytes} [Fri May 24 10:26:38 2019] GET /js/x-move.js => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 156 bytes (1 switches on core 0)
 [pid: 5253|app: 0|req: 113/339] 211.64.159.116 () {44 vars in 782 bytes} [Fri May 24 10:26:54 2019] GET /js/x-move.js => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 156 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./it_presentation/settings.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 5253)...
+Gracefully killing worker 2 (pid: 5254)...
+Gracefully killing worker 3 (pid: 5255)...
+Gracefully killing worker 4 (pid: 5256)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/project/presentation
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:8997)
+running /root/project/env/pyweb/bin/uwsgi
+[uWSGI] parsing config file mysite.xml
+*** Starting uWSGI 2.0.18 (64bit) on [Fri May 24 18:40:53 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 19 May 2019 03:58:35
+os: Linux-3.10.0-957.12.2.el7.x86_64 #1 SMP Tue May 14 21:24:32 UTC 2019
+nodename: iz2zeclei4hhnvg7qfyhm7z
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/project/presentation
+detected binary path: /root/project/env/pyweb/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/project/presentation/
+your processes number limit is 7269
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 19 2019, 11:52:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+Python main interpreter initialized at 0x1410a20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'it_presemtatiom'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 18740)
+spawned uWSGI worker 1 (pid: 5471, cores: 1)
+spawned uWSGI worker 2 (pid: 5472, cores: 1)
+spawned uWSGI worker 3 (pid: 5473, cores: 1)
+spawned uWSGI worker 4 (pid: 5474, cores: 1)
+Python auto-reloader enabled
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1410a20 pid: 5471 (default app)
+[pid: 5471|app: 0|req: 1/1] 211.64.159.116 () {48 vars in 934 bytes} [Fri May 24 10:49:49 2019] GET /admin/ => generated 8898 bytes in 449 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1410a20 pid: 5473 (default app)
+[pid: 5473|app: 0|req: 1/2] 211.64.159.116 () {48 vars in 915 bytes} [Fri May 24 10:49:52 2019] GET / => generated 14095 bytes in 407 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 2/3] 211.64.159.116 () {48 vars in 886 bytes} [Fri May 24 10:49:52 2019] GET /css/index-css..css => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 162 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 3/4] 211.64.159.116 () {48 vars in 896 bytes} [Fri May 24 10:49:52 2019] GET /css/scss/animation..css => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 4/5] 211.64.159.116 () {48 vars in 907 bytes} [Fri May 24 10:49:53 2019] GET /templates/desk.png => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 162 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 5/6] 211.64.159.116 () {48 vars in 907 bytes} [Fri May 24 10:49:53 2019] GET /templates/logo.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 162 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 6/7] 211.64.159.116 () {48 vars in 923 bytes} [Fri May 24 10:49:53 2019] GET /templates/%E5%AE%89%E5%8D%93.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 176 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 7/8] 211.64.159.116 () {48 vars in 903 bytes} [Fri May 24 10:49:53 2019] GET /templates/UI.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 160 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 8/9] 211.64.159.116 () {48 vars in 923 bytes} [Fri May 24 10:49:53 2019] GET /templates/%E6%B8%B8%E6%88%8F.png => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 176 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 9/10] 211.64.159.116 () {48 vars in 909 bytes} [Fri May 24 10:49:53 2019] GET /templates/desk2.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 163 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 10/11] 211.64.159.116 () {48 vars in 929 bytes} [Fri May 24 10:49:53 2019] GET /templates/%E6%A4%AD%E5%9C%86%205.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 180 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 11/12] 211.64.159.116 () {48 vars in 907 bytes} [Fri May 24 10:49:53 2019] GET /templates/left.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 162 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 12/13] 211.64.159.116 () {48 vars in 909 bytes} [Fri May 24 10:49:53 2019] GET /templates/right.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 163 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 13/14] 211.64.159.116 () {46 vars in 855 bytes} [Fri May 24 10:49:53 2019] GET /js/jquery-3.3.1.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 14/15] 211.64.159.116 () {48 vars in 953 bytes} [Fri May 24 10:49:53 2019] GET /templates/%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%201.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 198 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 15/16] 211.64.159.116 () {48 vars in 905 bytes} [Fri May 24 10:49:53 2019] GET /templates/404.png => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 161 bytes (1 switches on core 0)
+[pid: 5473|app: 0|req: 2/17] 211.64.159.116 () {46 vars in 835 bytes} [Fri May 24 10:49:53 2019] GET /js/x-move.js => generated 0 bytes in 31 msecs (HTTP/1.1 302) 5 headers in 156 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 16/18] 211.64.159.116 () {48 vars in 879 bytes} [Fri May 24 10:49:53 2019] GET /js/jquery-3.3.1.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 17/19] 211.64.159.116 () {48 vars in 865 bytes} [Fri May 24 10:49:53 2019] GET /js/animation.js => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 5471|app: 0|req: 18/20] 211.64.159.116 () {48 vars in 859 bytes} [Fri May 24 10:49:53 2019] GET /js/x-move.js => generated 0 bytes in 0 msecs (HTTP/1.1 302) 5 headers in 156 bytes (1 switches on core 0)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1410a20 pid: 5472 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1410a20 pid: 5474 (default app)
+[pid: 5472|app: 0|req: 1/21] 211.64.159.116 () {48 vars in 923 bytes} [Fri May 24 10:49:53 2019] GET /templates/%E5%89%8D%E7%AB%AF.png => generated 0 bytes in 863 msecs (HTTP/1.1 302) 5 headers in 176 bytes (1 switches on core 0)
+[pid: 5474|app: 0|req: 1/22] 211.64.159.116 () {48 vars in 923 bytes} [Fri May 24 10:49:53 2019] GET /templates/%E7%A8%8B%E5%BA%8F.png => generated 0 bytes in 852 msecs (HTTP/1.1 302) 5 headers in 176 bytes (1 switches on core 0)
