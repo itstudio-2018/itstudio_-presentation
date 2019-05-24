@@ -95,11 +95,34 @@ ul#pictureBox {
     width: 187px;
     margin: 0 37.5px; }
 
-.timeLine {
+.timeLineBox {
   height: 83px;
   width: 66%;
+  min-width: 1200px;
+  max-width: 1325px;
   margin: 0 auto;
   position: relative;
   top: 41px; }
+  .timeLineBox .timeLineRail {
+    width: 100%; }
+    .timeLineBox .timeLineRail #timeCar {
+      width: 57px;
+      height: 57px;
+      background-image: url("../../templates/danao.png");
+      background-size: 100% 100%;
+      background-color: yellow;
+      position: relative;
+      top: -20px;
+      z-index: 500; }
+  .timeLineBox ul {
+    position: relative;
+    top: -40px; }
+    .timeLineBox ul li {
+      float: left;
+      height: 70px;
+      width: 14.2%;
+      text-align: center;
+      padding-top: 50px;
+      user-select: none; }
 
 /*# sourceMappingURL=member..css.map */

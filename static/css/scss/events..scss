@@ -9,9 +9,10 @@
         position: relative;
         top: 98px;
         .eventTitle{
-            height:336px ;
+            height:386px ;
             width: 480px;
             position: relative;
+            float: left;
             .eventWhiteFrame{
                 width:222px;
                 height:183px;
@@ -36,10 +37,73 @@
                 height:24px;
                 color:rgba(3,3,3,1);
                 opacity:0.95;
+                font-size:24px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(3,3,3,1);
             }
         }
-        .events{
+    }
+}
 
+.events{
+    float: left;
+    height: 472px;
+    width: 753px;
+    margin-left: 95px;
+    .eventsLineBox{
+        float: left;
+        width: 153px;
+        height: 472xp;
+        ul{
+            float: left;
+            width: 116px;
+            margin-top: 32px;
+            li{
+                height: 75px;
+                line-height: 75px;
+            }
+        }
+        .eventsLine{
+            float: left;
+            position: relative;
+            left: -65px;
+            width:7px;
+            height:472px;
+            background:linear-gradient(0deg,rgba(251,229,197,1),rgba(251,215,134,1),rgba(251,229,197,1));
+            opacity:0.75;
+        }
+        .gradeArrow{
+            float: left;
+            width:30px;
+            height:26px;
+            background-image: url("../../templates/tuya_huabanfuben.png");
+            background-color: yellow;
+            position: relative;
+            left: -50px;
+        }
+    }
+    .eventsDetail{
+        float: left;
+        height:473px;
+        width: 600px;
+        position: relative;
+        top: -15px;
+        ul{
+            li{
+                float: right;
+                width:568px;
+                height:100px;
+                background:rgba(251,226,181,1);
+                box-shadow: -2px 2px 40px 10px rgba(63,63,63,0.06);
+                margin-top: 15px;
+            }
+            .eventsBackground{
+                width:600px;
+                height:122px;
+                background-image: url("../../templates/图层\ 9.png");
+                background-size: 100% 100%;
+            }
         }
     }
 }
