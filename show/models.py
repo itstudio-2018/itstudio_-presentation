@@ -52,6 +52,7 @@ class Member(models.Model):
 
     def get_department(self):
         return self.department.name
+    get_department.short_description = '部门'
 
 
 class Work(models.Model):
