@@ -12,6 +12,9 @@ import re
 import random
 import datetime
 
+import logging
+info_log = logging.getLogger('info')
+
 
 def response_success(content):
     content = json.dumps(content)
