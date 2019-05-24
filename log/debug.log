@@ -1,0 +1,24 @@
+2019-05-24 19:24:37,759 [Thread-3:12396] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /show/api/department_list/
+Traceback (most recent call last):
+  File "D:\Study\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Study\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Study\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\IT_Study\it_presentation\show\views.py", line 36, in get_department_list
+    info_log.info("get_department_list() call ip: %s") % request.META.get('HTTP_X_FORWARDED_FOR')
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'NoneType'
+2019-05-24 19:24:37,915 [Thread-3:12396] [django.server:124][basehttp:log_message] [ERROR]- "GET /show/api/department_list/ HTTP/1.1" 500 71045
+2019-05-24 19:25:07,980 [Thread-1:15928] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /show/api/department_list/
+Traceback (most recent call last):
+  File "D:\Study\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Study\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Study\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\IT_Study\it_presentation\show\views.py", line 36, in get_department_list
+    info_log.info("get_department_list() call ip: " + request.META.get('HTTP_X_FORWARDED_FOR'))
+TypeError: can only concatenate str (not "NoneType") to str
+2019-05-24 19:25:08,027 [Thread-1:15928] [django.server:124][basehttp:log_message] [ERROR]- "GET /show/api/department_list/ HTTP/1.1" 500 70887
