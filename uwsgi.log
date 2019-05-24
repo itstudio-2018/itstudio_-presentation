@@ -6687,3 +6687,61 @@ spawned uWSGI worker 4 (pid: 5917, cores: 1)
 Python auto-reloader enabled
 WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2a24a20 pid: 5916 (default app)
 [pid: 5916|app: 0|req: 1/1] 211.64.159.116 () {48 vars in 972 bytes} [Fri May 24 11:22:29 2019] GET /show/api/department_list/ => generated 240 bytes in 422 msecs (HTTP/1.1 200) 4 headers in 131 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./show/views.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 5914)...
+Gracefully killing worker 2 (pid: 5915)...
+Gracefully killing worker 3 (pid: 5916)...
+Gracefully killing worker 4 (pid: 5917)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/project/presentation
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:8997)
+running /root/project/env/pyweb/bin/uwsgi
+[uWSGI] parsing config file mysite.xml
+*** Starting uWSGI 2.0.18 (64bit) on [Fri May 24 19:26:59 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 19 May 2019 03:58:35
+os: Linux-3.10.0-957.12.2.el7.x86_64 #1 SMP Tue May 14 21:24:32 UTC 2019
+nodename: iz2zeclei4hhnvg7qfyhm7z
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/project/presentation
+detected binary path: /root/project/env/pyweb/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/project/presentation/
+your processes number limit is 7269
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 19 2019, 11:52:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+Python main interpreter initialized at 0x1d38a20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'it_presemtatiom'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 18740)
+spawned uWSGI worker 1 (pid: 6013, cores: 1)
+spawned uWSGI worker 2 (pid: 6014, cores: 1)
+spawned uWSGI worker 3 (pid: 6015, cores: 1)
+spawned uWSGI worker 4 (pid: 6016, cores: 1)
+Python auto-reloader enabled
