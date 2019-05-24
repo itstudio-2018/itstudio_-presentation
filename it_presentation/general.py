@@ -16,6 +16,3 @@ def css_redirect(requset, left_url):
 def dist_redirect(requset, left_url):
     return redirect('/static/dist/'+left_url)
 
-
-def media_redirect(request, left_url):
-    return redirect('/media/'+left_url)
