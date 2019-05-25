@@ -249,6 +249,11 @@ def apply(request):
             content['status'] = 'code_error'
             return response_error(content)
 
+        the_one = models.Applicant.objects.filter(phone_number=phone_number, email=email, status=0)
+        if the_one:
+            info_log.info("change_application_information")
+            the_one.delete()
+
         models.Applicant(name=name,
                          phone_number=phone_number,
                          email=email,
