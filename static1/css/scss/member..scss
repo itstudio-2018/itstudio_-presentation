@@ -111,10 +111,37 @@ ul#pictureBox{
 }
 
 //时间条
-.timeLine{
+.timeLineBox{
     height: 83px;
     width: 66%;
+    min-width: 1200px;
+    max-width: 1325px;
     margin: 0 auto;
     position: relative;
     top: 41px;
+    .timeLineRail{
+        width: 100%;
+        #timeCar{
+            width:57px;
+            height:57px;
+            background-image: url("../../templates/danao.png");
+            background-size: 100% 100%;
+            background-color: yellow;
+            position: relative;
+            top: -20px;
+            z-index: 500;
+        }
+    }
+    ul{
+        position: relative;
+        top: -40px;
+        li{
+            float: left;
+            height: 70px;
+            width: 14.2%;
+            text-align: center;
+            padding-top: 50px;
+            user-select: none;
+        }
+    }
 }

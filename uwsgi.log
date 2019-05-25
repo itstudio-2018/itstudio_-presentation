@@ -9484,3 +9484,84 @@ WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1547a20 pid: 1489
 WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1547a20 pid: 14899 (default app)
 [pid: 14899|app: 0|req: 1/2] 211.64.159.52 () {48 vars in 1009 bytes} [Sat May 25 12:14:51 2019] GET /admin/show/comment/ => generated 17589 bytes in 516 msecs (HTTP/1.1 200) 7 headers in 390 bytes (1 switches on core 0)
 [pid: 14898|app: 0|req: 2/3] 211.64.159.52 () {46 vars in 855 bytes} [Sat May 25 12:14:52 2019] GET /admin/jsi18n/ => generated 7682 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 3/4] 211.64.159.52 () {48 vars in 992 bytes} [Sat May 25 12:18:00 2019] GET /admin/show/comment/ => generated 17589 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 390 bytes (1 switches on core 0)
+[pid: 14899|app: 0|req: 2/5] 211.64.159.52 () {46 vars in 855 bytes} [Sat May 25 12:18:01 2019] GET /admin/jsi18n/ => generated 7682 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 4/6] 211.64.159.52 () {48 vars in 1001 bytes} [Sat May 25 12:18:03 2019] GET /admin/show/ => generated 3763 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 5/7] 211.64.159.52 () {48 vars in 1009 bytes} [Sat May 25 12:18:07 2019] GET /admin/show/comment/ => generated 17589 bytes in 64 msecs (HTTP/1.1 200) 7 headers in 390 bytes (1 switches on core 0)
+[pid: 14899|app: 0|req: 3/8] 211.64.159.52 () {46 vars in 855 bytes} [Sat May 25 12:18:07 2019] GET /admin/jsi18n/ => generated 7682 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 6/9] 211.64.159.52 () {48 vars in 1024 bytes} [Sat May 25 12:18:12 2019] GET /admin/show/comment/?p=1 => generated 7761 bytes in 28 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 14899|app: 0|req: 4/10] 211.64.159.52 () {46 vars in 859 bytes} [Sat May 25 12:18:12 2019] GET /admin/jsi18n/ => generated 7682 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 14899|app: 0|req: 5/11] 211.64.159.52 () {48 vars in 1028 bytes} [Sat May 25 12:18:13 2019] GET /admin/show/comment/?p=0 => generated 18395 bytes in 67 msecs (HTTP/1.1 200) 7 headers in 390 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 7/12] 211.64.159.52 () {46 vars in 859 bytes} [Sat May 25 12:18:13 2019] GET /admin/jsi18n/ => generated 7682 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 8/13] 211.64.159.52 () {48 vars in 1028 bytes} [Sat May 25 12:18:15 2019] GET /admin/show/comment/?p=1 => generated 7761 bytes in 27 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 14899|app: 0|req: 6/14] 211.64.159.52 () {46 vars in 859 bytes} [Sat May 25 12:18:15 2019] GET /admin/jsi18n/ => generated 7682 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 9/15] 211.64.159.52 () {50 vars in 1059 bytes} [Sat May 25 12:20:33 2019] GET /admin/show/comment/?p=1 => generated 7761 bytes in 30 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 14899|app: 0|req: 7/16] 211.64.159.52 () {46 vars in 859 bytes} [Sat May 25 12:20:33 2019] GET /admin/jsi18n/ => generated 7682 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1547a20 pid: 14900 (default app)
+[pid: 14900|app: 0|req: 1/17] 211.64.159.52 () {48 vars in 1005 bytes} [Sat May 25 12:20:36 2019] GET /admin/show/ => generated 3763 bytes in 468 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 10/18] 211.64.159.52 () {48 vars in 1007 bytes} [Sat May 25 12:20:37 2019] GET /admin/show/member/ => generated 22462 bytes in 105 msecs (HTTP/1.1 200) 7 headers in 390 bytes (1 switches on core 0)
+[pid: 14899|app: 0|req: 8/19] 211.64.159.52 () {46 vars in 854 bytes} [Sat May 25 12:20:37 2019] GET /admin/jsi18n/ => generated 7682 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 14898|app: 0|req: 11/20] 211.64.159.52 () {48 vars in 990 bytes} [Sat May 25 12:20:41 2019] GET /admin/ => generated 8838 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./show/admin.py has been modified
+[uwsgi-python-reloader] module/file ./show/admin.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 14897)...
+Gracefully killing worker 2 (pid: 14898)...
+Gracefully killing worker 3 (pid: 14899)...
+Gracefully killing worker 4 (pid: 14900)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/project/presentation
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:8997)
+running /root/project/env/pyweb/bin/uwsgi
+[uWSGI] parsing config file mysite.xml
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 25 20:21:29 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 19 May 2019 03:58:35
+os: Linux-3.10.0-957.12.2.el7.x86_64 #1 SMP Tue May 14 21:24:32 UTC 2019
+nodename: iz2zeclei4hhnvg7qfyhm7z
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/project/presentation
+detected binary path: /root/project/env/pyweb/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/project/presentation/
+your processes number limit is 7269
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 19 2019, 11:52:06)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+Python main interpreter initialized at 0xabca20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'it_presemtatiom'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 18740)
+spawned uWSGI worker 1 (pid: 15030, cores: 1)
+spawned uWSGI worker 2 (pid: 15031, cores: 1)
+spawned uWSGI worker 3 (pid: 15032, cores: 1)
+spawned uWSGI worker 4 (pid: 15033, cores: 1)
+Python auto-reloader enabled
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xabca20 pid: 15030 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xabca20 pid: 15031 (default app)
+[pid: 15031|app: 0|req: 1/1] 211.64.159.80 () {46 vars in 790 bytes} [Sat May 25 12:25:48 2019] GET /show/api/comment_list/ => generated 693 bytes in 834 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 15030|app: 0|req: 1/2] 211.64.159.80 () {46 vars in 776 bytes} [Sat May 25 12:25:48 2019] GET /show/api/story/ => generated 3481 bytes in 825 msecs (HTTP/1.1 200) 6 headers in 207 bytes (1 switches on core 0)

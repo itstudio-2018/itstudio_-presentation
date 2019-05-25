@@ -37,3 +37,4 @@ class CommentAdmin(admin.ModelAdmin):
     ordering = ('-time',)
     list_per_page = 30
     list_editable = ['reply']
+    list_filter = ('time',)
