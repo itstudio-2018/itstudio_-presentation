@@ -195,6 +195,18 @@ def apply(request):
             return response_error(content)
         the_department = the_department[0]
 
+        try:
+            code = json_data['code']
+        except:
+            code = ''
+        if not code:
+            content['status'] = 'code_error'
+            return response_error(content)
+
+        if code != request.session.get('code', None):
+            content['status'] = 'code_error'
+            return response_error(content)
+
         models.Applicant(name=name,
                          phone_number=phone_number,
                          email=email,
