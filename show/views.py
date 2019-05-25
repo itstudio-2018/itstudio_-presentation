@@ -147,6 +147,7 @@ def get_member_of_the_year(request):
                 'department': one.department.name,
                 'image': one.image.url,
                 'info': one.info,
+                'department_id': one.department_id,
             })
 
         content['status'] = 'ok'
