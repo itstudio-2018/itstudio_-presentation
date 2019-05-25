@@ -54,7 +54,7 @@ def send(email):
 
 
 def confirm(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         try:
@@ -98,7 +98,7 @@ def confirm(request):
 
 @csrf_exempt
 def apply(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'POST':
         content = {'status': ''}
@@ -214,7 +214,7 @@ def apply(request):
 
 
 def get_status(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': ''}

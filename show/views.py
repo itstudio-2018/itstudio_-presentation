@@ -9,6 +9,7 @@ import re
 import logging
 info_log = logging.getLogger('info')
 
+
 def index_html(request):
     return render(request, 'dist/index.html')
 
@@ -32,7 +33,7 @@ def response_error(content):
 
 
 def get_department_list(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': 'ok', 'list': []}
@@ -52,7 +53,7 @@ def get_department_list(request):
 
 
 def get_department(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': 'ok', 'num': 0, 'list': []}
@@ -75,7 +76,7 @@ def get_department(request):
 
 
 def get_story(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': 'ok', 'num': 0, 'list': []}
@@ -98,7 +99,7 @@ def get_story(request):
 
 
 def get_member_list(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': 'ok', 'member': []}
@@ -119,7 +120,7 @@ def get_member_list(request):
 
 
 def get_member_of_the_year(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': 'ok', 'num': 0, 'list': []}
@@ -152,7 +153,7 @@ def get_member_of_the_year(request):
 
 
 def get_work(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': 'ok', 'num': 0, 'list': []}
@@ -173,7 +174,7 @@ def get_work(request):
 
 
 def comment_list(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
         content = {'status': '', 'list': []}
@@ -225,7 +226,7 @@ def comment_list(request):
 
 @csrf_exempt
 def comment(request):
-    info_log.info("ip:%s url:%s method:%s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'POST':
         content = {'status': ''}
