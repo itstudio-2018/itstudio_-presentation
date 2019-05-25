@@ -30,5 +30,7 @@ urlpatterns = [
     url(r'^css/(.+)', general.css_redirect),
     url(r'^dist/(.+)', general.dist_redirect),
     url(r'^templates/(.+)', general.templates_redirect),
+
+    url(r'^captcha/', general.captcha_img),
 ]   \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
