@@ -236,6 +236,7 @@ def comment(request):
         except:
             json_data = {}
         if not json_data:
+            info_log.info("json_error")
             content['status'] = 'json_error'
             return response_error(content)
 
@@ -244,6 +245,7 @@ def comment(request):
         except:
             information = ''
         if not information:
+            info_log.info("content_error")
             content['status'] = 'content_error'
             return response_error(content)
 
@@ -252,10 +254,12 @@ def comment(request):
         except:
             code = ''
         if not code:
+            info_log.info("empty_code")
             content['status'] = 'code_error'
             return response_error(content)
 
         if code != request.session.get('code', None):
+            info_log.info("code_error")
             content['status'] = 'code_error'
             return response_error(content)
 
