@@ -93,6 +93,7 @@ def confirm(request):
         return HttpResponse(status=200)
 
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -108,6 +109,7 @@ def apply(request):
         except:
             json_data = {}
         if not json_data:
+            info_log.info("json_error")
             content['status'] = 'json_error'
             return response_error(content)
 
@@ -116,6 +118,7 @@ def apply(request):
         except:
             name = ''
         if not name:
+            info_log.info("name_error")
             content['status'] = 'name_error'
             return response_error(content)
 
@@ -124,19 +127,23 @@ def apply(request):
         except:
             phone_number = ''
         if not phone_number:
+            info_log.info("empty_phone")
             content['status'] = 'phone_error'
             return response_error(content)
 
         if re.search(r'\D', phone_number):
+            info_log.info("phone_type_error")
             content['status'] = 'phone_error'
             return response_error(content)
 
         if len(phone_number) != 11:
+            info_log.info("phone_length_error")
             content['status'] = 'phone_error'
             return response_error(content)
 
         if models.Applicant.objects.filter(phone_number=phone_number):
             if models.Applicant.objects.filter(phone_number=phone_number)[0].status != 0:
+                info_log.info("phone_error")
                 content['status'] = 'phone_error'
                 return response_error(content)
 
@@ -145,16 +152,19 @@ def apply(request):
         except:
             email = ''
         if not email:
+            info_log.info("empty_email")
             content['status'] = 'email_error'
             return response_error(content)
 
         if not re.search(r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$', email):
+            info_log.info("email_error")
             content['status'] = 'email_error'
             return response_error(content)
 
         if models.Applicant.objects.filter(email=email):
             if models.Applicant.objects.filter(email=email)[0].status != 0:
-                content['status'] = 'email_error'
+                info_log.info("already_error")
+                content['status'] = 'already_error'
                 return response_error(content)
 
         try:
@@ -162,6 +172,7 @@ def apply(request):
         except:
             year = 0
         if not year:
+            info_log.info("year_error")
             content['status'] = 'year_error'
             return response_error(content)
 
@@ -170,6 +181,7 @@ def apply(request):
         except:
             college = ''
         if not college:
+            info_log.info("college_error")
             content['status'] = 'college_error'
             return response_error(content)
 
@@ -178,6 +190,7 @@ def apply(request):
         except:
             speciality = ''
         if not speciality:
+            info_log.info("speciality_error")
             content['status'] = 'speciality_error'
             return response_error(content)
 
@@ -186,11 +199,13 @@ def apply(request):
         except:
             department_id = 0
         if not department_id:
+            info_log.info("empty_id")
             content['status'] = 'id_error'
             return response_error(content)
 
         the_department = Department.objects.filter(id=department_id)
         if not the_department:
+            info_log.info("id_error")
             content['status'] = 'id_error'
             return response_error(content)
         the_department = the_department[0]
@@ -200,10 +215,12 @@ def apply(request):
         except:
             code = ''
         if not code:
+            info_log.info("empty_code")
             content['status'] = 'code_error'
             return response_error(content)
 
         if code != request.session.get('code', None):
+            info_log.info("code_error")
             content['status'] = 'code_error'
             return response_error(content)
 
@@ -218,10 +235,12 @@ def apply(request):
 
         send(email)
 
+        info_log.info("apply_success")
         content['status'] = 'ok'
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -236,22 +255,28 @@ def get_status(request):
         except:
             email = ''
         if not email:
+            info_log.info("empty_error")
             content['status'] = 'email_error'
+            return response_error(content)
 
         if not re.search(r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$', email):
+            info_log.info("email_error")
             content['status'] = 'email_error'
             return response_error(content)
 
         applicant = models.Applicant.objects.filter(email=email)
         if not applicant:
+            info_log.info("wrong_email")
             content['status'] = 'msg_error'
             return response_error(content)
 
+        info_log.info("get_status_success")
         content['status'] = 'ok'
         content['situation'] = applicant[0].status
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
