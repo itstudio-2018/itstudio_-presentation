@@ -49,6 +49,7 @@ def get_department_list(request):
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -72,6 +73,7 @@ def get_department(request):
         return response_success(content)
 
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -95,6 +97,7 @@ def get_story(request):
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -116,6 +119,7 @@ def get_member_list(request):
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -129,6 +133,7 @@ def get_member_of_the_year(request):
         except:
             year = 0
         if not year:
+            info_log.info("year_error")
             content['status'] = 'year_error'
             return response_error(content)
         content['year'] = year
@@ -149,6 +154,7 @@ def get_member_of_the_year(request):
         return response_success(content)
 
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -170,6 +176,7 @@ def get_work(request):
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -194,12 +201,14 @@ def comment_list(request):
                     'reply': one.reply,
                 })
 
+            info_log.info("no_last_comment_list_success")
             content['status'] = 'ok'
 
             return response_success(content)
 
         begin = last - 1
         if begin < 0:
+            info_log.info("end_error")
             content['status'] = 'end_error'
             return response_error(content)
 
@@ -217,10 +226,12 @@ def comment_list(request):
                 'reply': one.reply,
             })
 
+        info_log.info("comment_list_success")
         content['status'] = 'ok'
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
@@ -264,10 +275,12 @@ def comment(request):
             return response_error(content)
 
         models.Comment(content=information).save()
+        info_log.info("comment_success")
         content['status'] = 'ok'
 
         return response_success(content)
     else:
+        info_log.info("method_error")
         return HttpResponse(status=404)
 
 
