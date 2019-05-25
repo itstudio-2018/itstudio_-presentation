@@ -259,6 +259,10 @@ def comment(request):
             info_log.info("content_error")
             content['status'] = 'content_error'
             return response_error(content)
+        if len(content) > 80:
+            info_log.info("content_length_error")
+            content['status'] = 'length_error'
+            return response_error(content)
 
         try:
             code = json_data['code']

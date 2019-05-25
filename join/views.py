@@ -122,6 +122,11 @@ def apply(request):
             content['status'] = 'name_error'
             return response_error(content)
 
+        if len(name) > 20:
+            info_log.info("name_length_error")
+            content['status'] = 'name_length_error'
+            return response_error(content)
+
         try:
             phone_number = json_data['phone']
         except:
@@ -161,6 +166,11 @@ def apply(request):
             content['status'] = 'email_error'
             return response_error(content)
 
+        if len(email) > 100:
+            info_log.info("email_length_error")
+            content['status'] = 'email_length_error'
+            return response_error(content)
+
         if models.Applicant.objects.filter(email=email):
             if models.Applicant.objects.filter(email=email)[0].status != 0:
                 info_log.info("already_error")
@@ -176,6 +186,11 @@ def apply(request):
             content['status'] = 'year_error'
             return response_error(content)
 
+        if year < 2000 or year > 9999:
+            info_log.info("year_value_error")
+            content['status'] = 'year_value_error'
+            return response_error(content)
+
         try:
             college = json_data['college']
         except:
@@ -185,6 +200,11 @@ def apply(request):
             content['status'] = 'college_error'
             return response_error(content)
 
+        if len(college) > 20:
+            info_log.info("college_length_error")
+            content['status'] = 'college_length_error'
+            return response_error(content)
+
         try:
             speciality = json_data['speciality']
         except:
@@ -192,6 +212,11 @@ def apply(request):
         if not speciality:
             info_log.info("speciality_error")
             content['status'] = 'speciality_error'
+            return response_error(content)
+
+        if len(speciality) > 20:
+            info_log.info("speciality_length_error")
+            content['status'] = 'speciality_length_error'
             return response_error(content)
 
         try:
