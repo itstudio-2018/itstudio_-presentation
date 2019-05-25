@@ -35,6 +35,6 @@ class WorkAdmin(admin.ModelAdmin):
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('content', 'reply')
     ordering = ('-time',)
-    list_per_page = 30
+    list_per_page = 10
     list_editable = ['reply']
     list_filter = ('time',)
