@@ -40,8 +40,8 @@ class Captcha():
         self.height = height  # 生成图片高度
         self.bgColor = bgColor  # 生成图片背景颜色
         self.num = num  # 验证码字符个数
-        self.fontPath = 'arial.ttf'  # 字体路径
-        self.fontPath = '{}/arialbd.ttf'.format(settings.BASE_DIR).replace('\\', '/')  #   # 字体大小
+        self.fontPath = '{}/arialbd.ttf'.format(settings.BASE_DIR).replace('\\', '/')  # # 字体大小
+        self.font = ImageFont.truetype(self.fontPath, fontSize)  # 字体大小
         self.code = ''
         self.codename = str(uuid.uuid1())  # 验证码文件名
         self.img = Image.new('RGB', (self.width, self.height), self.bgColor)  # 生成图片对象
