@@ -2,7 +2,9 @@ from django.shortcuts import render, redirect
 import random
 import uuid
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
-from io import StringIO
+
+from io import BytesIO as StringIO
+
 from random import randint as rdint
 import string
 from django.http import HttpResponse
