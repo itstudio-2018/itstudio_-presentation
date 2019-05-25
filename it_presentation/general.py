@@ -134,8 +134,7 @@ class Captcha():
 def captcha_img(request):
     img = Captcha()
     return HttpResponse(img.saveInMemory(request),
-                        content_type='application/json;charset = utf-8',
+                        content_type='image/png',
                         status='200',
                         reason='ok',
                         charset='utf-8')
-
