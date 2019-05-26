@@ -148,17 +148,20 @@ $(".eventsDetailBox li").click(function(){
         $(this).siblings().removeClass("eventsBackground");
         $(this).addClass("eventsBackground");
     }
-})
+});
+let preNumber = 0;
 $(".eventsLineBox ul li").click(function(){
-    var number =$(this).index();
-    if($(this).children().length >0){
-        $(".eventsDetailBox").eq(number).show();
-    }else{
+    let number =$(this).index();
+    if(number === preNumber){
+        return null;
+    }else {
         $(this).append(`<div></div>`);
         $(this).siblings().find("div").remove();
-        $(".eventsDetailBox").eq(number).siblings().hide();
+        $(".eventsDetailBox").eq(preNumber).hide();
+        $(".eventsDetailBox").eq(number).show();
+        preNumber = number;
     }
-})
+});
 //event滚动
 $(document).ready(function() {
   
