@@ -256,6 +256,13 @@ def apply(request):
         the_department = the_department[0]
 
         try:
+            message = str(json_data['message'])
+        except:
+            message = ''
+        if len(message) > 200:
+            message = message[:200]
+
+        try:
             code = json_data['code']
         except:
             code = ''
@@ -280,7 +287,8 @@ def apply(request):
                          year=year,
                          college=college,
                          speciality=speciality,
-                         department=the_department
+                         department=the_department,
+                         message=message
                          ).save()
 
         send(email)

@@ -10,6 +10,7 @@ class Applicant(models.Model):
     college = models.CharField(max_length=20, verbose_name=u'学院')
     speciality = models.CharField(max_length=20, verbose_name=u'专业')
     department = models.ForeignKey(Department, verbose_name=u'意向部门')
+    message = models.CharField(max_length=200, verbose_name=u'备注')
 
     status_choice = (
         (-1, '未通过'),
