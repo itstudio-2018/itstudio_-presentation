@@ -236,11 +236,11 @@ def comment_list(request):
         return HttpResponse(status=404)
 
 
-@csrf_exempt
+
 def comment(request):
     info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
-    if request.method == 'POST':
+    if request.method == 'POST' or request.method == 'OPTIONS':
         content = {'status': ''}
 
         try:

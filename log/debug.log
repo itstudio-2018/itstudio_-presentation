@@ -1,1 +1,254 @@
 
+2019-05-25 16:26:56,797 [uWSGIWorker2Core0:139826165852224] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /captcha/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./it_presentation/general.py", line 134, in captcha_img
+    img = Captcha()
+  File "./it_presentation/general.py", line 43, in __init__
+    self.font = ImageFont.truetype(self.fontPath, fontSize)  # 字体大小
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/ImageFont.py", line 280, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/ImageFont.py", line 145, in __init__
+    layout_engine=layout_engine)
+OSError: cannot open resource
+2019-05-25 16:46:50,486 [uWSGIWorker4Core0:140532866250816] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /captcha/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./it_presentation/general.py", line 136, in captcha_img
+    return HttpResponse(img.saveInMemory(request),
+  File "./it_presentation/general.py", line 121, in saveInMemory
+    img = self.getVertifyImg()
+  File "./it_presentation/general.py", line 115, in getVertifyImg
+    self.drawText((x, y), self.get_random_char(), self.get_random_Color())
+  File "./it_presentation/general.py", line 95, in drawText
+    draw.text(position, char, font=self.font, fill=fillColor)
+AttributeError: 'Captcha' object has no attribute 'font'
+2019-05-25 16:49:38,256 [uWSGIWorker4Core0:140553122879552] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /captcha/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./it_presentation/general.py", line 136, in captcha_img
+    return HttpResponse(img.saveInMemory(request),
+  File "./it_presentation/general.py", line 124, in saveInMemory
+    img.save(f, 'png')
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/Image.py", line 2007, in save
+    save_handler(self, fp, filename)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/PngImagePlugin.py", line 798, in _save
+    fp.write(_MAGIC)
+TypeError: string argument expected, got 'bytes'
+2019-05-25 16:55:13,698 [uWSGIWorker2Core0:140476692486208] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /captcha/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./it_presentation/general.py", line 136, in captcha_img
+    return HttpResponse(img.saveInMemory(request),
+  File "./it_presentation/general.py", line 124, in saveInMemory
+    img.save(f, 'png')
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/Image.py", line 2007, in save
+    save_handler(self, fp, filename)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/PngImagePlugin.py", line 798, in _save
+    fp.write(_MAGIC)
+TypeError: string argument expected, got 'bytes'
+2019-05-25 16:55:51,010 [uWSGIWorker2Core0:140476692486208] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /captcha/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./it_presentation/general.py", line 136, in captcha_img
+    return HttpResponse(img.saveInMemory(request),
+  File "./it_presentation/general.py", line 124, in saveInMemory
+    img.save(f, 'png')
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/Image.py", line 2007, in save
+    save_handler(self, fp, filename)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/PIL/PngImagePlugin.py", line 798, in _save
+    fp.write(_MAGIC)
+TypeError: string argument expected, got 'bytes'
+2019-05-26 05:18:18,887 [uWSGIWorker1Core0:139651151919168] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/join/applicant/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'join_applicant.message' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1662, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/query.py", line 1102, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 876, in execute_sql
+    cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'join_applicant.message' in 'field list'")
+2019-05-26 05:18:24,179 [uWSGIWorker1Core0:139651151919168] [django.request:135][exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/join/applicant/
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'join_applicant.message' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1662, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/query.py", line 1102, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 876, in execute_sql
+    cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/root/project/env/pyweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'join_applicant.message' in 'field list'")
