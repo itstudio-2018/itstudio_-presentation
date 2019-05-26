@@ -121,7 +121,7 @@ class Captcha():
 
     def saveInMemory(self, request):
         img = self.getVertifyImg()
-        request.session['code'] = self.code.lower()
+        request.session['code'] = self.code
         f = StringIO()  # 开辟内存空间
         img.save(f, 'png')
         return f.getvalue()
