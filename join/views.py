@@ -53,6 +53,26 @@ def send(email):
               [email],)
 
 
+def sent_status(email, status):
+    info_log.info(email)
+    msg = ''
+    if status == 1:
+        msg = '激活'
+    if status == 2:
+        msg = '通过初审'
+    if status == 3:
+        msg = '通过面试'
+    if status == 4:
+        msg = '选中'
+    if status == -1:
+        msg = '很遗憾'
+
+    send_mail('爱特工作室',
+              msg,
+              settings.EMAIL_FROM,
+              email, )
+
+
 def confirm(request):
     info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
