@@ -226,3 +226,5 @@ LOGGING = {
     }
 }
 
+
+ALLOWED_OSTS = ["*"]

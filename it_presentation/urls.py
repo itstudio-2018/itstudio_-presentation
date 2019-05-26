@@ -35,3 +35,6 @@ urlpatterns = [
 ]   \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
 	      + static(settings.STATIC_URL)
+handler404 = general.page404
+handler500 = general.page404
+handler502 = general.page404

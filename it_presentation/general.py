@@ -140,3 +140,8 @@ def captcha_img(request):
                         status='200',
                         reason='ok',
                         charset='utf-8')
+
+
+from django.shortcuts import render_to_response
+def page404(request):
+    return render_to_response('dist/apply.html')
