@@ -34,11 +34,31 @@
     overflow: hidden;
     max-width: 100%;
     outline: none;
-    background-color: #FFF6E7; }
+    overflow: hidden; }
     .messageBoxShow .showBody .showBodyContainer {
-      overflow: hidden;
-      height: auto;
-      width: auto; }
+      height: auto; }
+      .messageBoxShow .showBody .showBodyContainer ul li {
+        margin-top: 10px;
+        width: 568px;
+        height: 100px;
+        background-color: #FFF6E7;
+        border-radius: 5px;
+        position: relative; }
+        .messageBoxShow .showBody .showBodyContainer ul li p {
+          width: 500px;
+          position: relative;
+          top: 24px;
+          left: 24px;
+          font-size: 12px; }
+        .messageBoxShow .showBody .showBodyContainer ul li h5 {
+          margin-top: 30px;
+          margin-left: 24px;
+          color: red; }
+        .messageBoxShow .showBody .showBodyContainer ul li span {
+          position: absolute;
+          right: 18px;
+          bottom: 18px;
+          font-size: 14px; }
     .messageBoxShow .showBody .showBodyScrollbar {
       width: 7px;
       height: 100%;
@@ -124,10 +144,11 @@
           height: 30px;
           width: 98px;
           border-style: none; }
-      .messageBoxPush .messageWrite .messageFooter .verify_img {
-        float: left;
-        cursor: pointer; }
-      .messageBoxPush .messageWrite .messageFooter .submit {
+        .messageBoxPush .messageWrite .messageFooter .verify img {
+          width: 136px;
+          height: 43px;
+          cursor: pointer; }
+      .messageBoxPush .messageWrite .messageFooter .messageSubmit {
         float: right;
         border-style: none;
         margin-right: 53px;

@@ -15,15 +15,13 @@
   width: 100%;
   position: fixed;
   padding-top: 20px;
-  z-index: 500;
+  z-index: 5000;
   color: white;
   background: #000000ab; }
   .nav .container {
     height: 62px;
     width: 70%;
-    position: fixed;
-    left: 15%;
-    top: 20px;
+    min-width: 1110px;
     z-index: 500;
     color: white; }
     .nav .container .logo {
@@ -44,8 +42,8 @@
       font-family: MicrosoftYaHei; }
       .nav .container .menu ul li {
         float: left;
-        width: 60px;
-        margin: 20px 16px 0 16px;
+        width: 80px;
+        margin: 20px 6px 0 6px;
         cursor: pointer; }
     .nav .container .join {
       float: right;
@@ -87,6 +85,62 @@
       .joinDetail .joinBox .joinForm h4 {
         color: black;
         font-size: 24px; }
+
+.joinStateDetail {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  background-color: rgba(31, 30, 30, 0.8);
+  height: 982px;
+  display: none; }
+  .joinStateDetail .joinStateBox {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 654px;
+    height: 550px;
+    background: #fdeedf;
+    border-radius: 10px;
+    position: relative;
+    top: 30px; }
+    .joinStateDetail .joinStateBox .joinStateForm {
+      width: 530px;
+      height: 450px;
+      margin: 0 auto;
+      position: relative;
+      top: 25px; }
+      .joinStateDetail .joinStateBox .joinStateForm .stateBox {
+        color: black; }
+        .joinStateDetail .joinStateBox .joinStateForm .stateBox input {
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid #fcd7b3; }
+        .joinStateDetail .joinStateBox .joinStateForm .stateBox .stateCheckSubmit {
+          width: 184px;
+          height: 45px;
+          background: #fadca4;
+          border-radius: 5px;
+          text-align: center;
+          line-height: 45px;
+          margin: 0 auto;
+          margin-top: 89px; }
+
+.stateLine {
+  height: 82px;
+  width: 611px;
+  margin-top: 74px; }
+  .stateLine .stateModule {
+    float: left;
+    width: 82px;
+    height: 82px;
+    background: #fadca4;
+    border-radius: 50%;
+    line-height: 82px;
+    text-align: center; }
+  .stateLine .stateArrow {
+    float: left;
+    height: 82px;
+    width: 50px;
+    background-color: yellow; }
 
 form {
   color: black;
@@ -395,26 +449,35 @@ input {
   right: 0px;
   cursor: pointer; }
 
-ul#pictureBox {
+.pictureBoxBox {
+  width: 1050px; }
+
+.pictureBox {
   height: 236px;
-  width: 786px;
-  margin: 0 auto; }
-  ul#pictureBox li {
+  width: 1050px;
+  position: relative; }
+  .pictureBox li {
+    margin: 0 auto;
     float: left;
     height: 230px;
     width: 187px;
     margin: 0 37.5px; }
+    .pictureBox li img {
+      width: 187px;
+      height: 187px; }
+  .pictureBox .pictureLargen {
+    width: 200px;
+    height: 200px; }
 
 .timeLineBox {
   height: 83px;
-  width: 66%;
-  min-width: 1200px;
-  max-width: 1325px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
   top: 41px; }
   .timeLineBox .timeLineRail {
-    width: 100%; }
+    width: 100%;
+    user-select: none; }
     .timeLineBox .timeLineRail #timeCar {
       width: 57px;
       height: 57px;
@@ -478,18 +541,72 @@ ul#pictureBox {
     .work .workBox .moreWorks {
       margin: 0 auto;
       position: relative;
-      top: 195px;
+      top: 180px;
       width: 265px;
       height: 55px;
       background: #fad59e;
       box-shadow: -2px 2px 40px 10px rgba(63, 63, 63, 0.06);
       border-radius: 10px;
       text-align: center;
-      line-height: 55px;
+      line-height: 50px;
       cursor: pointer;
       color: white;
       font-size: 21px;
       user-select: none; }
+
+.works {
+  perspective: 800px; }
+  .works .workShow {
+    float: left;
+    width: 544px;
+    height: 323px;
+    position: relative; }
+    .works .workShow p {
+      position: absolute;
+      bottom: 0px;
+      left: 40%;
+      font-size: 22px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      color: #030303; }
+  .works div {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s; }
+  .works .workIncline {
+    float: left;
+    border: 10px solid white;
+    border-radius: 6px;
+    width: 275px;
+    height: 152px;
+    transform: rotateY(-45deg) rotateX(30deg);
+    cursor: pointer; }
+    .works .workIncline img {
+      height: 100%;
+      width: 100%; }
+  .works .work1 {
+    position: relative;
+    top: -40px;
+    left: 300px; }
+  .works .work2 {
+    position: relative;
+    top: 25px;
+    left: -50px; }
+  .works .work3 {
+    position: relative;
+    top: -60px;
+    left: 150px; }
+  .works .work4 {
+    position: relative;
+    left: -200px; }
+  .works .workMove1 {
+    transform: rotateX(0deg) rotateY(0deg) translateX(-725px) translateY(100px) scale(1.87); }
+  .works .workMove2 {
+    transform: rotateX(0deg) rotateY(0deg) translateX(-655px) translateY(45px) scale(1.87); }
+  .works .workMove3 {
+    transform: rotateX(0deg) rotateY(0deg) translateX(-575px) translateY(-25px) scale(1.87); }
+  .works .workMove4 {
+    transform: rotateX(0deg) rotateY(0deg) translateX(-505px) translateY(-90px) scale(1.87); }
 
 .worksDetail {
   float: left;
@@ -501,7 +618,7 @@ ul#pictureBox {
   border-radius: 10px;
   position: absolute;
   top: 56px;
-  left: calc(100px - 100%); }
+  left: calc(60px - 100%); }
   .worksDetail .networkBox {
     margin: 0 auto;
     margin-top: 134px;
@@ -608,7 +725,16 @@ ul#pictureBox {
       margin-top: 32px; }
       .events .eventsLineBox ul li {
         height: 75px;
-        line-height: 75px; }
+        line-height: 75px;
+        cursor: pointer; }
+        .events .eventsLineBox ul li div {
+          width: 30px;
+          height: 26px;
+          background-image: url("../../templates/tuya_huabanfuben.png");
+          background-color: yellow;
+          position: relative;
+          top: -50px;
+          left: 70px; }
     .events .eventsLineBox .eventsLine {
       float: left;
       position: relative;
@@ -617,28 +743,28 @@ ul#pictureBox {
       height: 472px;
       background: linear-gradient(0deg, #fbe5c5, #fbd786, #fbe5c5);
       opacity: 0.75; }
-    .events .eventsLineBox .gradeArrow {
-      float: left;
-      width: 30px;
-      height: 26px;
-      background-image: url("../../templates/tuya_huabanfuben.png");
-      background-color: yellow;
-      position: relative;
-      left: -50px; }
   .events .eventsDetail {
     float: left;
     height: 473px;
     width: 600px;
     position: relative;
-    top: -15px; }
-    .events .eventsDetail ul li {
+    top: -15px;
+    overflow: hidden; }
+    .events .eventsDetail .eventsDetailBox li {
       float: right;
       width: 568px;
       height: 100px;
       background: #fbe2b5;
       box-shadow: -2px 2px 40px 10px rgba(63, 63, 63, 0.06);
-      margin-top: 15px; }
-    .events .eventsDetail ul .eventsBackground {
+      margin-top: 15px;
+      cursor: pointer; }
+      .events .eventsDetail .eventsDetailBox li p {
+        margin-top: 26px;
+        margin-left: 36px; }
+      .events .eventsDetail .eventsDetailBox li span {
+        margin-top: 12px;
+        margin-left: 36px; }
+    .events .eventsDetail .eventsDetailBox .eventsBackground {
       width: 600px;
       height: 122px;
       background-image: url("../../templates/图层 9.png");
@@ -680,11 +806,31 @@ ul#pictureBox {
     overflow: hidden;
     max-width: 100%;
     outline: none;
-    background-color: #FFF6E7; }
+    overflow: hidden; }
     .messageBoxShow .showBody .showBodyContainer {
-      overflow: hidden;
-      height: auto;
-      width: auto; }
+      height: auto; }
+      .messageBoxShow .showBody .showBodyContainer ul li {
+        margin-top: 10px;
+        width: 568px;
+        height: 100px;
+        background-color: #FFF6E7;
+        border-radius: 5px;
+        position: relative; }
+        .messageBoxShow .showBody .showBodyContainer ul li p {
+          width: 500px;
+          position: relative;
+          top: 24px;
+          left: 24px;
+          font-size: 12px; }
+        .messageBoxShow .showBody .showBodyContainer ul li h5 {
+          margin-top: 30px;
+          margin-left: 24px;
+          color: red; }
+        .messageBoxShow .showBody .showBodyContainer ul li span {
+          position: absolute;
+          right: 18px;
+          bottom: 18px;
+          font-size: 14px; }
     .messageBoxShow .showBody .showBodyScrollbar {
       width: 7px;
       height: 100%;
@@ -770,10 +916,11 @@ ul#pictureBox {
           height: 30px;
           width: 98px;
           border-style: none; }
-      .messageBoxPush .messageWrite .messageFooter .verify_img {
-        float: left;
-        cursor: pointer; }
-      .messageBoxPush .messageWrite .messageFooter .submit {
+        .messageBoxPush .messageWrite .messageFooter .verify img {
+          width: 136px;
+          height: 43px;
+          cursor: pointer; }
+      .messageBoxPush .messageWrite .messageFooter .messageSubmit {
         float: right;
         border-style: none;
         margin-right: 53px;

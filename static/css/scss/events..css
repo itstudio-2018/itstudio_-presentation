@@ -58,7 +58,16 @@
       margin-top: 32px; }
       .events .eventsLineBox ul li {
         height: 75px;
-        line-height: 75px; }
+        line-height: 75px;
+        cursor: pointer; }
+        .events .eventsLineBox ul li div {
+          width: 30px;
+          height: 26px;
+          background-image: url("../../templates/tuya_huabanfuben.png");
+          background-color: yellow;
+          position: relative;
+          top: -50px;
+          left: 70px; }
     .events .eventsLineBox .eventsLine {
       float: left;
       position: relative;
@@ -67,28 +76,28 @@
       height: 472px;
       background: linear-gradient(0deg, #fbe5c5, #fbd786, #fbe5c5);
       opacity: 0.75; }
-    .events .eventsLineBox .gradeArrow {
-      float: left;
-      width: 30px;
-      height: 26px;
-      background-image: url("../../templates/tuya_huabanfuben.png");
-      background-color: yellow;
-      position: relative;
-      left: -50px; }
   .events .eventsDetail {
     float: left;
     height: 473px;
     width: 600px;
     position: relative;
-    top: -15px; }
-    .events .eventsDetail ul li {
+    top: -15px;
+    overflow: hidden; }
+    .events .eventsDetail .eventsDetailBox li {
       float: right;
       width: 568px;
       height: 100px;
       background: #fbe2b5;
       box-shadow: -2px 2px 40px 10px rgba(63, 63, 63, 0.06);
-      margin-top: 15px; }
-    .events .eventsDetail ul .eventsBackground {
+      margin-top: 15px;
+      cursor: pointer; }
+      .events .eventsDetail .eventsDetailBox li p {
+        margin-top: 26px;
+        margin-left: 36px; }
+      .events .eventsDetail .eventsDetailBox li span {
+        margin-top: 12px;
+        margin-left: 36px; }
+    .events .eventsDetail .eventsDetailBox .eventsBackground {
       width: 600px;
       height: 122px;
       background-image: url("../../templates/图层 9.png");

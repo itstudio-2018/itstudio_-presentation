@@ -1,0 +1,40 @@
+.nofoundBox{
+    height: 286px;
+    width: 372px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+p{
+    text-align: center;
+    font-size:32px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    opacity:0.95;
+}
+.backIndex{
+    float: left;
+    width:152px;
+    height:45px;
+    background:rgba(250,213,158,1);
+    box-shadow:-2px 2px 40px 10px rgba(31,30,30,0.03);
+    border-radius:5px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+.refresh{
+    float: right;
+    width:152px;
+    height:45px;
+    background:rgba(250,213,158,1);
+    box-shadow:-2px 2px 40px 10px rgba(31,30,30,0.03);
+    border-radius:5px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
