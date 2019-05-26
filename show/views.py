@@ -244,6 +244,7 @@ def comment(request):
         content = {'status': ''}
 
         try:
+            info_log.info(request.body)
             json_data = json.loads(request.body)
         except:
             json_data = {}
