@@ -2,6 +2,9 @@ from django.contrib import admin
 from . import models
 from django.http import StreamingHttpResponse
 import xlwt
+from .views import sent_status
+import logging
+info_log = logging.getLogger('info')
 
 
 @admin.register(models.Applicant)
@@ -13,22 +16,62 @@ class ApplicantAdmin(admin.ModelAdmin):
     ordering = ('name', 'status')
 
     def status_1(self, request, queryset):
+        queryset = queryset.filter(status=0)
+        info_log.info("send_email_status_1")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 1)
+
         queryset.update(status=1)
+
     status_1.short_description = '激活'
 
     def status_2(self, request, queryset):
+        queryset = queryset.filter(status=1)
+        info_log.info("send_email_status_2")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 2)
+
         queryset.update(status=2)
     status_2.short_description = '通过初审'
 
     def status_3(self, request, queryset):
+        queryset = queryset.filter(status=2)
+        info_log.info("send_email_status_3")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 3)
+
         queryset.update(status=3)
     status_3.short_description = '通过面试'
 
     def status_4(self, request, queryset):
+        queryset = queryset.filter(status=3)
+        info_log.info("send_email_status_4")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 4)
+
         queryset.update(status=4)
     status_4.short_description = '选中'
 
     def status_false(self, request, queryset):
+        info_log.info("send_email_status_-1")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, -1)
+
         queryset.update(status=-1)
     status_false.short_description = '刷下'
 
