@@ -85,26 +85,35 @@
   right: 0px;
   cursor: pointer; }
 
-ul#pictureBox {
+.pictureBoxBox {
+  width: 1050px; }
+
+.pictureBox {
   height: 236px;
-  width: 786px;
-  margin: 0 auto; }
-  ul#pictureBox li {
+  width: 1050px;
+  position: relative; }
+  .pictureBox li {
+    margin: 0 auto;
     float: left;
     height: 230px;
     width: 187px;
     margin: 0 37.5px; }
+    .pictureBox li img {
+      width: 187px;
+      height: 187px; }
+  .pictureBox .pictureLargen {
+    width: 200px;
+    height: 200px; }
 
 .timeLineBox {
   height: 83px;
-  width: 66%;
-  min-width: 1200px;
-  max-width: 1325px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
   top: 41px; }
   .timeLineBox .timeLineRail {
-    width: 100%; }
+    width: 100%;
+    user-select: none; }
     .timeLineBox .timeLineRail #timeCar {
       width: 57px;
       height: 57px;

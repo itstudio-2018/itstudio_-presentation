@@ -10,19 +10,18 @@
         z-index: -1;
     }
 }
-.nav{    
+.nav{
     height: 100px;
     width: 100%;
     position: fixed;
     padding-top: 20px;
-    z-index: 500;
+    z-index: 5000;
     color: white;
     background: #000000ab;
     .container{
         height: 62px;
         width: 70%;
-        position: fixed;
-        left: 15%;top: 20px;
+        min-width: 1110px;
         z-index: 500;
         color: white;
         .logo{
@@ -47,8 +46,8 @@
         
                 li{
                     float: left;
-                    width: 60px;
-                    margin:20px 16px 0 16px;
+                    width: 80px;
+                    margin:20px 6px 0 6px;
                     cursor: pointer;
                 }
             }
@@ -97,6 +96,73 @@
                 font-size: 24px;
             }
         }
+    }
+}
+.joinStateDetail{
+    position: absolute;
+    top: 70px;
+    width:100%;
+    background-color: rgba(31,30,30,0.8);
+    height:982px;
+    display: none;
+    .joinStateBox{
+        margin: 0 auto;
+        width:60%;
+        min-width: 654px;
+        height:550px;
+        background:rgba(253,238,223,1);
+        border-radius:10px;
+        position: relative;
+        top: 30px;
+        .joinStateForm{
+            width: 530px;
+            height: 450px;
+            margin: 0 auto;
+            position: relative;
+            top: 25px;
+            img{
+                
+            }
+            .stateBox{
+                color: black;
+                input{
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid #fcd7b3;
+                }
+                .stateCheckSubmit{
+                    width:184px;
+                    height:45px;
+                    background:rgba(250,220,164,1);
+                    border-radius:5px;
+                    text-align: center;
+                    line-height: 45px;
+                    margin: 0 auto;
+                    margin-top: 89px;
+                }
+            }
+        }
+    }
+}
+.stateLine{
+    height: 82px;
+    width: 611px;
+    margin-top: 74px;
+    .stateModule{
+        float: left;
+        width:82px;
+        height:82px;
+        background:rgba(250,220,164,1);
+        border-radius:50%;
+        line-height: 82px;
+        text-align: center;
+
+    }
+    .stateArrow{
+        float: left;
+        height: 82px;
+        width: 50px;
+        background-color: yellow;
     }
 }
 form{

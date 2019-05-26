@@ -98,29 +98,39 @@
     top: 145px;right: 0px;
     cursor: pointer;
 }
-ul#pictureBox{
-    height: 236px;
-    width: 786px;
-    margin: 0 auto;
+.pictureBoxBox{
+    width: 1050px;
+}
+.pictureBox{
+    height: 236px;width: 1050px;
+    position: relative;
     li{
+        margin: 0 auto;
         float: left;
         height:230px ;
         width: 187px;
         margin: 0 37.5px;
+        img{
+            width:187px;
+            height:187px;
+        }
+    }
+    .pictureLargen{
+        width: 200px;
+        height: 200px;
     }
 }
 
 //时间条
 .timeLineBox{
     height: 83px;
-    width: 66%;
-    min-width: 1200px;
-    max-width: 1325px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
     top: 41px;
     .timeLineRail{
         width: 100%;
+        user-select: none;
         #timeCar{
             width:57px;
             height:57px;

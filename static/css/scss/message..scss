@@ -39,11 +39,37 @@
         overflow: hidden;
         max-width: 100%;
         outline: none;
-        background-color: #FFF6E7;
+        overflow:hidden;
         .showBodyContainer{
-            overflow: hidden;
             height: auto;
-            width: auto;
+            ul{
+                li{
+                    margin-top: 10px;
+                    width:568px;
+                    height:100px;
+                    background-color:#FFF6E7;
+                    border-radius:5px;
+                    position: relative;
+                    p{
+                        width: 500px;
+                        position: relative;
+                        top: 24px;
+                        left: 24px;
+                        font-size: 12px;
+                    }
+                    h5{
+                        margin-top: 30px;
+                        margin-left: 24px;
+                        color: red;
+                    }
+                    span{
+                        position: absolute;
+                        right: 18px;
+                        bottom: 18px;
+                        font-size: 14px;
+                    }
+                }
+            }
         }
         .showBodyScrollbar{
             width: 7px;
@@ -142,12 +168,13 @@
                     width: 98px;
                     border-style: none;
                 }
+                img{
+                    width:136px;
+                    height:43px;
+                    cursor: pointer;
+                }
             }
-            .verify_img{
-                float: left;
-                cursor: pointer;
-            }
-            .submit{
+            .messageSubmit{
                 float: right;
                 border-style: none;
                 margin-right: 53px;

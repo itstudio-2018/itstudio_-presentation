@@ -45,14 +45,14 @@
         .moreWorks{
             margin: 0 auto;
             position: relative;
-            top: 195px;
+            top: 180px;
             width:265px;
             height:55px;
             background:rgba(250,213,158,1);
             box-shadow:-2px 2px 40px 10px rgba(63,63,63,0.06);
             border-radius:10px;
             text-align: center;
-            line-height: 55px;
+            line-height: 50px;
             cursor: pointer;
             color: white;
             font-size:21px;
@@ -60,7 +60,69 @@
         }
     }
 }
+.works{	
+    perspective: 800px;
+    .workShow{
+        float: left;
+        width:544px;
+        height:323px;
+        position: relative;
+        p{
+            position: absolute;
+            bottom: 0px;left: 40%;
+            font-size:22px;
+            font-family:MicrosoftYaHei;
+            font-weight:400;
+            color:rgba(3,3,3,1);
+        }
+    }
+    div{position: relative;
+        transform-style:preserve-3d;
+        transition: transform 2s;
+    }
+    .workIncline{
+        float: left;
+        border: 10px solid white;
+        border-radius:6px;
+        width:275px;
+        height:152px;
+        transform: rotateY(-45deg) rotateX(30deg);
+        cursor: pointer;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .work1{
+        position: relative;
+        top: -40px;left: 300px;
+    }
+    .work2{
+        position: relative;
+        top: 25px;left: -50px;
+    }
+    .work3{
+        position: relative;
+        top: -60px;left: 150px;
+    }
+    .work4{
+        position: relative;
+        left: -200px;
+    }
+    .workMove1{
+        transform:  rotateX(0deg) rotateY(0deg) translateX(-725px) translateY(100px) scale(1.87);
+    }
+    .workMove2{
+        transform:  rotateX(0deg) rotateY(0deg) translateX(-655px) translateY(45px) scale(1.87);
+    }
+    .workMove3{
+        transform:  rotateX(0deg) rotateY(0deg) translateX(-575px) translateY(-25px) scale(1.87);
+    }
+    .workMove4{
+        transform:  rotateX(0deg) rotateY(0deg) translateX(-505px) translateY(-90px) scale(1.87);
+    }
 
+}
 //点击作品（网站）了解更多弹出细节卡片
 .worksDetail{    
     float: left;
@@ -71,7 +133,7 @@
     box-shadow:1px 2px 40px 10px rgba(5,5,5,0.05);
     border-radius:10px;
     position: absolute;
-    top: 56px;left: calc(100px - 100%);
+    top: 56px;left: calc(60px - 100%);
     .networkBox{
         margin: 0 auto;
         margin-top: 134px;

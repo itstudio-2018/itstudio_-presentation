@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>爱特展示网</title>
+    <link rel="shortcut icon" href="../templates/logo1.png">
     <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index-css..css">
     <link rel="stylesheet" href="../css/scss/animation..css">
@@ -23,9 +24,10 @@
                     <li>作品</li>
                     <li>大事记</li>
                     <li>留言板</li>
+                    <li class="joinState">状态查询</li>
                 </ul>
             </div> 
-            </div>        
+            </div>   
             <div class="joinDetail">
                 <div class="joinBox">
                     <div class="joinForm">
@@ -40,6 +42,28 @@
                             备注留言：<input type="text" placeholder="(少于80个字)"/>    <!--文本框-->
                             <input type="submit" class="submit"/>    <!--提交按钮-->
                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="joinStateDetail">
+                <div class="joinStateBox">
+                    <div class="joinStateForm">
+                        <img src="../templates/图层 9.png" alt="">
+                        <div class="stateBox">
+                            邮箱地址：<input type="text" placeholder="输入邮箱地址">
+                            <div class="stateLine">
+                                <div class="stateModule stateSuccess"></div>
+                                <div class="stateArrow">=></div>
+                                <div class="stateModule">待初审</div>
+                                <div class="stateArrow">=></div>
+                                <div class="stateModule">待面试</div>
+                                <div class="stateArrow">=></div>
+                                <div class="stateModule">待笔试</div>
+                                <div class="stateArrow">=></div>
+                                <div class="stateModule">已选中</div>
+                            </div>
+                            <div class="stateCheckSubmit">查询</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,19 +143,28 @@
             <div class="memberShow">
                 <div class="memberTitle">OUR&nbspMEMBERS</div>
                 <div class="memberBox">
-                    <ul id="pictureBox">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="pictureBoxBox">
+                        <ul class="pictureBox">
+                        </ul>
+                        <ul class="pictureBox">
+                        </ul>
+                        <ul class="pictureBox">
+                        </ul>
+                        <ul class="pictureBox">
+                        </ul>
+                        <ul class="pictureBox">
+                        </ul>
+                    </div>
+
+                    
                     <div class="teamBox">
                         <div class="teamName">
                             <img src="../templates/椭圆 5.png" alt="">
-                            <p>前端开发</p>
+                            <p>程序开发</p>
                         </div>
                         <div class="teamName">
                             <img src="../templates/椭圆 5.png" alt="">
-                            <p>程序开发</p>
+                            <p>前端开发</p>
                         </div>
                         <div class="teamName">
                             <img src="../templates/椭圆 5.png" alt="">
@@ -155,7 +188,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeLineBox">
+        <div class="timeLineBox" id="debounce">
             <div class="timeLineRail">
                 <img src="../templates/圆角矩形 1.png" alt="" width="100%">
                 <div id="timeCar"></div>
@@ -179,7 +212,17 @@
                 </div>
                 <p>用灵感，智慧和想象力创造未来</p>
             </div>
-            <div class="works"></div>
+            <div class="works">
+                <div class="workShow">
+                    <p>44444</p>
+                </div>
+                <div class="work1 workIncline workMove1">
+                    <img src="../templates/404.png" alt="">
+                </div>
+                <div class="work2 workIncline"></div>
+                <div class="work3 workIncline"></div>
+                <div class="work4 workIncline"></div>
+            </div>
             <div class="moreWorks">了解更多</div>
         </div>
         <div class="worksDetail">
@@ -262,22 +305,22 @@
             <div class="events">
                 <div class="eventsLineBox">
                     <ul>
-                        <li>2014</li>
-                        <li>2015</li>
-                        <li>2016</li>
-                        <li>2017</li>
-                        <li>2018</li>
+                        <li class="event2014">2014<div class="gradeArrow"></div></li>
+                        <li class="event2015">2015</li>
+                        <li class="event2016">2016</li>
+                        <li class="event2017">2017</li>
+                        <li class="event2018">2018</li>
                     </ul>
                     <div class="eventsLine"></div>
-                    <div class="gradeArrow"></div>
+
                 </div>
-                <div class="eventsDetail">
+                <div class="eventsDetail" id="eventsDetailboxscroll" style="display:none2">
                     <ul class="eventsDetailBox">
-                        <li class="eventsBackground"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
                     </ul>
+                    <ul class="eventsDetailBox"></ul>
+                    <ul class="eventsDetailBox"></ul>
+                    <ul class="eventsDetailBox"></ul>
+                    <ul class="eventsDetailBox"></ul>
                 </div>
             </div>
         </div>
@@ -287,11 +330,10 @@
             <div class="messageBox">
                 <div class="messageBoxShow">
                     <h4>欢迎在此留下你宝贵的意见</h4>
-                    <div class="showBody">
+                    <div class="showBody" id="boxscroll" style="display:none2">
                         <div class="showBodyContainer">
-                        </div>
-                        <div class="showBodyScrollbar">
-                            <div class="scrollbarBlock"></div>
+                            <ul class="messageList">
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -305,19 +347,25 @@
                             <textarea name="" id="" cols="30" rows="10" maxlength="80" placeholder="请不要超过80个字"></textarea>
                         </div>
                         <div class="messageFooter">
-                            <div class="verifyTip">(请输入验证码)</div>
+                            <div class="verifyTip">请输入验证码</div>
                             <div class="verify"><input type="text"></div>
-                            <div class="verify_img" ><img src="" alt="点击更换验证码" id="ident"></div>
-                            <button class="submit">发表</button>
+                            <img id="ident" src="http://39.96.208.176/captcha/" onclick="changeverify();"/>
+                            <button type="submit" class="messageSubmit">发表</button>
                         </div>                 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/x-move.js"></script>
+<script src="../js/nicescroll.js"></script>
 <script src="../js/animation.js"></script>
+<script src="../js/index-ajax.js"></script>
 </html>
