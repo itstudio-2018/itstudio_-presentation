@@ -141,11 +141,11 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = (
-    '*'
-)
+
+
+
+
+
 
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 465
