@@ -86,6 +86,7 @@ def get_one_department(request):
             id = request.GET.get("id")
 
         except:
+            info_log.info('id_error')
             return HttpResponse(status=404)
 
         content = {}
