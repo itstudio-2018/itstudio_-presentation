@@ -93,6 +93,8 @@ def get_one_department(request):
 
         department = models.Department.objects.filter(id=id)
         if department:
+            department = department[0]
+            
             content['id'] = department.id
             content['name'] = department.name
             content['info'] = department.info
