@@ -66,9 +66,34 @@ def get_department(request):
 
         for one in departments:
             content['list'].append({
+                'id': one.id,
                 'name': one.name,
                 'info': one.info,
             })
+
+        return response_success(content)
+
+    else:
+        info_log.info("method_error")
+        return HttpResponse(status=404)
+
+
+def get_one_department(request):
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+
+    if request.method == 'GET':
+        try:
+            id = request.GET.get("id")
+
+        except:
+            return HttpResponse(status=404)
+
+        content = {}
+
+        department = models.Department.objects.filter(id=id)
+        content['id'] = department.id
+        content['name'] = department.name
+        content['info'] = department.info
 
         return response_success(content)
 
