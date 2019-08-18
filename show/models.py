@@ -3,7 +3,7 @@ from django.db import models
 
 class Department(models.Model):
     name = models.CharField(max_length=20, verbose_name=u'部门名称')
-    info = models.CharField(max_length=100, verbose_name=u'介绍')
+    info = models.CharField(max_length=1000, verbose_name=u'介绍')
     is_alive = models.BooleanField(default=True, verbose_name=u'状态')
 
     class Meta:
