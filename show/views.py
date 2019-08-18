@@ -92,11 +92,15 @@ def get_one_department(request):
         content = {}
 
         department = models.Department.objects.filter(id=id)
-        content['id'] = department.id
-        content['name'] = department.name
-        content['info'] = department.info
-        info_log.info(content)
-        return response_success(content)
+        if department:
+            content['id'] = department.id
+            content['name'] = department.name
+            content['info'] = department.info
+            info_log.info(content)
+            return response_success(content)
+        else:
+            info_log.info('no_id_error')
+            return HttpResponse(status=404)
 
     else:
         info_log.info("method_error")
