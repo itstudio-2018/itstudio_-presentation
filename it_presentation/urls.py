@@ -22,8 +22,10 @@ from . import general
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
     url(r'^show/', include('show.urls', namespace='show')),
     url(r'^join/', include('join.urls', namespace='join')),
+
     url(r'^$', index_html),
 
     url(r'^js/(.+)', general.js_redirect),
