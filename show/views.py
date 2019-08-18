@@ -95,7 +95,7 @@ def get_one_department(request):
         content['id'] = department.id
         content['name'] = department.name
         content['info'] = department.info
-
+        info_log.info(content)
         return response_success(content)
 
     else:
