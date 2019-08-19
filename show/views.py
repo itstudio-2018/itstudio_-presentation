@@ -146,13 +146,15 @@ def get_member_list(request):
 
         for one in all_year:
             departments_id = []
-            members_of_the_year = models.Member.objects.filter(year=one['year']).order_by('id').value('id')
-            [departments_id.append(i) for i in members_of_the_year if not i in members_of_the_year]
+            members_of_the_year = models.Member.objects.filter(year=one['year'])
 
+            for member in members_of_the_year:
+                if member.department__id not in departments_id:
+                    departments_id.append(member.department__id)
+            
             content['member'].append({
                 'year': one['year'],
-                'num': len(models.Member.objects.filter(year=one['year'])),
-                'departments_id': departments_id
+                'num': len(members_of_the_year),
             })
 
         return response_success(content)
