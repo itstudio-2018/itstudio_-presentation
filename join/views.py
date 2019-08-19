@@ -197,47 +197,50 @@ def apply(request):
                 content['status'] = 'already_error'
                 return response_error(content)
 
-        try:
-            year = int(json_data['year'])
-        except:
-            year = 0
-        if not year:
-            info_log.info("year_error")
-            content['status'] = 'year_error'
-            return response_error(content)
+        # try:
+        #     year = int(json_data['year'])
+        # except:
+        #     year = 0
+        # if not year:
+        #     info_log.info("year_error")
+        #     content['status'] = 'year_error'
+        #     return response_error(content)
+        #
+        # if year < 2000 or year > 9999:
+        #     info_log.info("year_value_error")
+        #     content['status'] = 'year_value_error'
+        #     return response_error(content)
+        year = 2019
 
-        if year < 2000 or year > 9999:
-            info_log.info("year_value_error")
-            content['status'] = 'year_value_error'
-            return response_error(content)
+        # try:
+        #     college = json_data['college']
+        # except:
+        #     college = ''
+        # if not college:
+        #     info_log.info("college_error")
+        #     content['status'] = 'college_error'
+        #     return response_error(content)
+        #
+        # if len(college) > 20:
+        #     info_log.info("college_length_error")
+        #     content['status'] = 'college_length_error'
+        #     return response_error(content)
+        college = 0
 
-        try:
-            college = json_data['college']
-        except:
-            college = ''
-        if not college:
-            info_log.info("college_error")
-            content['status'] = 'college_error'
-            return response_error(content)
-
-        if len(college) > 20:
-            info_log.info("college_length_error")
-            content['status'] = 'college_length_error'
-            return response_error(content)
-
-        try:
-            speciality = json_data['speciality']
-        except:
-            speciality = ''
-        if not speciality:
-            info_log.info("speciality_error")
-            content['status'] = 'speciality_error'
-            return response_error(content)
-
-        if len(speciality) > 20:
-            info_log.info("speciality_length_error")
-            content['status'] = 'speciality_length_error'
-            return response_error(content)
+        # try:
+        #     speciality = json_data['speciality']
+        # except:
+        #     speciality = ''
+        # if not speciality:
+        #     info_log.info("speciality_error")
+        #     content['status'] = 'speciality_error'
+        #     return response_error(content)
+        #
+        # if len(speciality) > 20:
+        #     info_log.info("speciality_length_error")
+        #     content['status'] = 'speciality_length_error'
+        #     return response_error(content)
+        speciality = 0
 
         try:
             department_id = json_data['department_id']
