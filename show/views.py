@@ -45,6 +45,7 @@ def get_department_list(request):
             content['list'].append({
                 'id': one.id,
                 'name': one.name,
+                'is_alive': one.is_alive
             })
 
         return response_success(content)
