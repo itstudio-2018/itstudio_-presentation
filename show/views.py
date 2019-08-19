@@ -291,6 +291,9 @@ def comment_list(request):
 def comment(request):
     info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
+    if request.method == 'OPTIONS':
+        return HttpResponse(status=200)
+
     if request.method == 'POST':
         content = {'status': ''}
 
