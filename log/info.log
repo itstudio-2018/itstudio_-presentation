@@ -15545,3 +15545,518 @@
 2019-08-19 10:16:17,159 [uWSGIWorker3Core0:140023144720448] [info:18][general:templates_redirect] [INFO]- ip 112.224.69.90 url /templates/tuya_huabanfuben.png method GET
 2019-08-19 10:16:17,211 [uWSGIWorker2Core0:140023144720448] [info:23][general:js_redirect] [INFO]- ip 112.224.69.90 url /js/nicescroll.js method GET
 2019-08-19 10:16:17,501 [uWSGIWorker1Core0:140023144720448] [info:23][general:js_redirect] [INFO]- ip 112.224.69.90 url /js/index-ajax.js method GET
+2019-08-19 10:30:34,410 [uWSGIWorker1Core0:140720026273856] [info:23][general:js_redirect] [INFO]- ip 112.224.69.90 url /js/animation.js method GET
+2019-08-19 11:46:05,786 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:46:05,851 [uWSGIWorker1Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:46:05,859 [uWSGIWorker4Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:46:05,865 [uWSGIWorker3Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:46:05,871 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:46:05,880 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:46:05,887 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:46:05,892 [uWSGIWorker3Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:46:05,893 [uWSGIWorker3Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:46:05,897 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:46:05,907 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:46:05,913 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:46:05,934 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:46:05,991 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:48:36,218 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:48:36,222 [uWSGIWorker4Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:48:36,226 [uWSGIWorker1Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:48:36,232 [uWSGIWorker3Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:48:36,246 [uWSGIWorker2Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:48:36,248 [uWSGIWorker4Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:48:36,252 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:48:36,255 [uWSGIWorker4Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:48:36,268 [uWSGIWorker4Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:48:36,276 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:48:36,277 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:48:36,296 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:48:36,299 [uWSGIWorker4Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:48:36,374 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:28,009 [uWSGIWorker3Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:49:28,011 [uWSGIWorker4Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:28,013 [uWSGIWorker1Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:49:28,018 [uWSGIWorker1Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:49:28,021 [uWSGIWorker4Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:49:28,036 [uWSGIWorker4Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:49:28,098 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:28,241 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:28,243 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:49:28,244 [uWSGIWorker3Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:49:28,252 [uWSGIWorker3Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:49:28,255 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:49:28,268 [uWSGIWorker3Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:49:28,396 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:59,055 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:59,057 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:49:59,062 [uWSGIWorker1Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:49:59,065 [uWSGIWorker1Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:49:59,068 [uWSGIWorker3Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:49:59,080 [uWSGIWorker3Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:49:59,183 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:59,201 [uWSGIWorker1Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:49:59,205 [uWSGIWorker4Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:49:59,210 [uWSGIWorker3Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:49:59,211 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:49:59,213 [uWSGIWorker1Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:49:59,226 [uWSGIWorker1Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:49:59,331 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:50:52,868 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:50:52,870 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:50:52,872 [uWSGIWorker1Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:50:52,877 [uWSGIWorker1Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:50:52,883 [uWSGIWorker3Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:50:52,895 [uWSGIWorker3Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:50:53,027 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:50:53,089 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:50:53,091 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:50:53,093 [uWSGIWorker1Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:50:53,100 [uWSGIWorker1Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:50:53,103 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:50:53,116 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:50:53,235 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:51:18,228 [uWSGIWorker4Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:51:18,274 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:51:18,276 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:51:18,278 [uWSGIWorker1Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:51:18,282 [uWSGIWorker1Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:51:18,286 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:51:18,290 [uWSGIWorker3Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:51:18,295 [uWSGIWorker1Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:51:18,299 [uWSGIWorker3Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:51:18,304 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:51:18,322 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:51:18,323 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:51:18,326 [uWSGIWorker3Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:51:18,450 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:52:02,227 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:52:02,232 [uWSGIWorker1Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:52:02,234 [uWSGIWorker4Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:52:02,238 [uWSGIWorker4Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:52:02,242 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:52:02,264 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:52:02,267 [uWSGIWorker4Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:52:02,272 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:52:02,277 [uWSGIWorker2Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:52:02,283 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:52:02,292 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:52:02,313 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:52:02,400 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:52:02,411 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:29,568 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:29,569 [uWSGIWorker1Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:55:29,571 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:55:29,576 [uWSGIWorker1Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:55:29,581 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:55:29,583 [uWSGIWorker3Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:55:29,589 [uWSGIWorker1Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:29,601 [uWSGIWorker3Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:55:29,602 [uWSGIWorker3Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:55:29,604 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:55:29,605 [uWSGIWorker2Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:55:29,608 [uWSGIWorker1Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:55:29,709 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:29,751 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:57,715 [uWSGIWorker3Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:55:57,717 [uWSGIWorker1Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:55:57,718 [uWSGIWorker4Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:57,726 [uWSGIWorker4Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:55:57,729 [uWSGIWorker3Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:55:57,743 [uWSGIWorker3Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:55:57,814 [uWSGIWorker4Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:55:57,815 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:57,819 [uWSGIWorker4Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:55:57,822 [uWSGIWorker3Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:55:57,824 [uWSGIWorker2Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:55:57,834 [uWSGIWorker4Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:55:57,852 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:55:57,995 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:56:11,019 [uWSGIWorker4Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:56:11,022 [uWSGIWorker1Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:56:11,081 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:56:11,083 [uWSGIWorker3Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:56:11,085 [uWSGIWorker4Core0:140247461374016] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 11:56:11,093 [uWSGIWorker3Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:56:11,111 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:56:11,113 [uWSGIWorker2Core0:140247461374016] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 11:56:11,119 [uWSGIWorker3Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:56:11,139 [uWSGIWorker3Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 11:56:11,150 [uWSGIWorker2Core0:140247461374016] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 11:56:11,151 [uWSGIWorker2Core0:140247461374016] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 11:56:11,186 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 11:56:11,296 [uWSGIWorker2Core0:140247461374016] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 12:10:22,275 [uWSGIWorker2Core0:140247461374016] [info:23][general:js_redirect] [INFO]- ip 112.224.69.90 url /js/main.989d1545.chunk.js method GET
+2019-08-19 12:14:05,766 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 112.224.69.90 url /show/api/work/ method GET
+2019-08-19 12:14:08,150 [uWSGIWorker2Core0:140247461374016] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 112.224.69.90 url /show/api/member/ method GET
+2019-08-19 12:15:29,417 [uWSGIWorker2Core0:140247461374016] [info:214][views:get_work] [INFO]- ip 112.224.69.90 url /show/api/work/ method GET
+2019-08-19 12:21:32,482 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.69.90 url /show/api/department/ method GET
+2019-08-19 12:21:32,517 [uWSGIWorker2Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 112.224.69.90 url /show/api/member_list/ method GET
+2019-08-19 12:21:32,747 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 112.224.69.90 url /show/api/comment_list/ method GET
+2019-08-19 12:21:32,756 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 12:21:32,827 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.69.90 url /show/api/department/ method GET
+2019-08-19 12:21:33,854 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 112.224.69.90 url /show/api/story/ method GET
+2019-08-19 12:21:33,878 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 112.224.69.90 url /show/api/work/ method GET
+2019-08-19 12:21:46,066 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.69.90 url /show/api/comment/ method OPTIONS
+2019-08-19 12:21:46,067 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 12:21:46,067 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 12:21:46,147 [uWSGIWorker3Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.69.90 url /show/api/comment/ method POST
+2019-08-19 12:21:46,147 [uWSGIWorker3Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"fsdfdsafd","code":"woen"}'
+2019-08-19 12:21:46,148 [uWSGIWorker3Core0:140482967267392] [info:331][views:comment] [INFO]- None
+2019-08-19 12:21:46,148 [uWSGIWorker3Core0:140482967267392] [info:343][views:comment] [INFO]- 1_code_error
+2019-08-19 12:22:28,296 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.69.90 url /show/api/department/ method GET
+2019-08-19 12:22:28,328 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 112.224.69.90 url /show/api/member_list/ method GET
+2019-08-19 12:22:28,386 [uWSGIWorker2Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 112.224.69.90 url /show/api/story/ method GET
+2019-08-19 12:22:28,408 [uWSGIWorker2Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 112.224.69.90 url /show/api/work/ method GET
+2019-08-19 12:22:28,447 [uWSGIWorker4Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 112.224.69.90 url /show/api/comment_list/ method GET
+2019-08-19 12:22:28,453 [uWSGIWorker4Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 12:22:28,496 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.69.90 url /show/api/department/ method GET
+2019-08-19 12:22:36,026 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.69.90 url /show/api/comment/ method OPTIONS
+2019-08-19 12:22:36,026 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 12:22:36,026 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 12:22:36,106 [uWSGIWorker4Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.69.90 url /show/api/comment/ method POST
+2019-08-19 12:22:36,106 [uWSGIWorker4Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"312123","code":"brdy"}'
+2019-08-19 12:22:36,107 [uWSGIWorker4Core0:140482967267392] [info:331][views:comment] [INFO]- None
+2019-08-19 12:22:36,107 [uWSGIWorker4Core0:140482967267392] [info:343][views:comment] [INFO]- 1_code_error
+2019-08-19 14:26:02,102 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:26:02,104 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:26:02,106 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:26:02,113 [uWSGIWorker2Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:26:02,119 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:26:02,130 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:26:02,142 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:26:02,144 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:26:02,146 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:26:02,154 [uWSGIWorker1Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:26:02,185 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:26:02,194 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:26:02,229 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:26:02,285 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:26:33,229 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:26:33,231 [uWSGIWorker4Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:26:33,233 [uWSGIWorker3Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:26:33,243 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:26:33,245 [uWSGIWorker2Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:26:33,251 [uWSGIWorker3Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:26:33,327 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:26:33,329 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:26:33,336 [uWSGIWorker4Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:26:33,338 [uWSGIWorker2Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:26:33,345 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:26:33,359 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:26:33,448 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:26:33,457 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:28:01,708 [uWSGIWorker3Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:28:01,711 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:28:01,715 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:28:01,719 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:28:01,721 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:28:01,741 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:28:01,770 [uWSGIWorker2Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:28:01,771 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:28:01,772 [uWSGIWorker4Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:28:01,777 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:28:01,784 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:28:01,803 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:28:01,854 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:28:01,868 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:30:09,081 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:30:09,083 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:30:09,085 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:30:09,090 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:30:09,093 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:30:09,106 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:30:09,208 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:30:09,218 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:30:09,222 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:30:09,224 [uWSGIWorker1Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:30:09,228 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:30:09,231 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:30:09,246 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:30:09,279 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:31:52,915 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:31:52,917 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:31:52,919 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:31:52,923 [uWSGIWorker4Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:31:52,930 [uWSGIWorker2Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:31:52,932 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:31:52,942 [uWSGIWorker2Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:31:52,945 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:31:52,950 [uWSGIWorker4Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:31:52,951 [uWSGIWorker4Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:31:52,959 [uWSGIWorker2Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:31:52,976 [uWSGIWorker4Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:31:53,090 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:31:53,117 [uWSGIWorker4Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:32:00,331 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:32:00,332 [uWSGIWorker2Core0:140482967267392] [info:187][views:get_member_of_the_year_and_department] [INFO]- department_id_error
+2019-08-19 14:32:04,342 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:32:04,343 [uWSGIWorker2Core0:140482967267392] [info:187][views:get_member_of_the_year_and_department] [INFO]- department_id_error
+2019-08-19 14:32:11,860 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:32:11,860 [uWSGIWorker2Core0:140482967267392] [info:187][views:get_member_of_the_year_and_department] [INFO]- department_id_error
+2019-08-19 14:33:00,399 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:33:00,400 [uWSGIWorker2Core0:140482967267392] [info:187][views:get_member_of_the_year_and_department] [INFO]- department_id_error
+2019-08-19 14:33:28,947 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:33:28,992 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:33:28,994 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:33:28,996 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:33:29,000 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:33:29,014 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:33:29,016 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:33:30,337 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:33:30,339 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:33:30,341 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:33:30,346 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:33:30,351 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:33:30,363 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:33:30,560 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:33:35,830 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:33:38,271 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:33:41,097 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:33:43,732 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:33:53,715 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:33:56,029 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:34:00,524 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:34:01,897 [uWSGIWorker1Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:21,990 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:23,202 [uWSGIWorker1Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:29,173 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:30,437 [uWSGIWorker1Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:32,822 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:34,370 [uWSGIWorker1Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:40,077 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:40,157 [uWSGIWorker1Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:41,303 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:42,435 [uWSGIWorker1Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:43,758 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:49,535 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:35:51,140 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:36:17,190 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:36:22,081 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:36:33,303 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:36:47,849 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:36:49,548 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:36:50,873 [uWSGIWorker1Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:36:51,898 [uWSGIWorker2Core0:140482967267392] [info:168][views:get_member_of_the_year_and_department] [INFO]- ip 211.64.159.213 url /show/api/member/ method GET
+2019-08-19 14:38:28,588 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:38:28,590 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:38:28,592 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:38:28,599 [uWSGIWorker3Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:38:28,602 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:38:28,604 [uWSGIWorker1Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:38:28,610 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:38:28,618 [uWSGIWorker2Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:38:28,622 [uWSGIWorker3Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:38:28,623 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:38:28,629 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:38:28,648 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:38:28,730 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:38:28,741 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:38:44,805 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method OPTIONS
+2019-08-19 14:38:44,805 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 14:38:44,805 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 14:39:09,745 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method OPTIONS
+2019-08-19 14:39:09,746 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 14:39:09,746 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 14:39:24,509 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:39:24,511 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:39:24,513 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:39:24,518 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:39:24,523 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:39:24,539 [uWSGIWorker4Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:39:24,546 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:39:24,547 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:39:24,551 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:39:24,560 [uWSGIWorker2Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:39:24,564 [uWSGIWorker4Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:39:24,587 [uWSGIWorker4Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:39:24,624 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:39:24,683 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:39:32,794 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method POST
+2019-08-19 14:39:32,794 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"adsadasd","code":"DbbR"}'
+2019-08-19 14:39:32,798 [uWSGIWorker2Core0:140482967267392] [info:331][views:comment] [INFO]- DbbR
+2019-08-19 14:39:32,833 [uWSGIWorker2Core0:140482967267392] [info:347][views:comment] [INFO]- comment_success
+2019-08-19 14:40:23,658 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:40:23,666 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:40:23,671 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:40:23,676 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:40:23,677 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:40:23,690 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:40:23,758 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:40:23,759 [uWSGIWorker3Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:40:23,762 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:40:23,766 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:40:23,768 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:40:23,772 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:40:23,784 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:40:23,904 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:40:39,336 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method OPTIONS
+2019-08-19 14:40:39,336 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 14:40:39,336 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 14:42:46,772 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 211.64.159.213 url /join/api/status/ method GET
+2019-08-19 14:42:46,776 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:43:07,525 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 211.64.159.213 url /join/api/status/ method GET
+2019-08-19 14:43:07,528 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:47:16,488 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 211.64.159.213 url /join/api/status/ method GET
+2019-08-19 14:47:16,491 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:47:53,917 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 112.224.67.229 url /join/api/status/ method GET
+2019-08-19 14:47:53,920 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:48:02,247 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 112.224.67.229 url /join/api/status/ method GET
+2019-08-19 14:48:02,251 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:48:02,968 [uWSGIWorker1Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 112.224.67.229 url /join/api/status/ method GET
+2019-08-19 14:48:02,972 [uWSGIWorker1Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:48:04,047 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 112.224.67.229 url /join/api/status/ method GET
+2019-08-19 14:48:04,050 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:48:57,780 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.67.229 url /show/api/comment/ method POST
+2019-08-19 14:48:57,780 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b'{\n    "content": "hello world",\n    "code": "ssss"\n}'
+2019-08-19 14:48:57,784 [uWSGIWorker2Core0:140482967267392] [info:331][views:comment] [INFO]- mXIY
+2019-08-19 14:48:57,787 [uWSGIWorker2Core0:140482967267392] [info:347][views:comment] [INFO]- comment_success
+2019-08-19 14:49:42,067 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.67.229 url /show/api/department/ method GET
+2019-08-19 14:49:42,097 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 112.224.67.229 url /show/api/member_list/ method GET
+2019-08-19 14:49:42,117 [uWSGIWorker2Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 112.224.67.229 url /show/api/story/ method GET
+2019-08-19 14:49:42,147 [uWSGIWorker2Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 112.224.67.229 url /show/api/work/ method GET
+2019-08-19 14:49:42,196 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 112.224.67.229 url /show/api/comment_list/ method GET
+2019-08-19 14:49:42,202 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:49:42,267 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.67.229 url /show/api/department/ method GET
+2019-08-19 14:50:35,107 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.67.229 url /show/api/comment/ method OPTIONS
+2019-08-19 14:50:35,107 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 14:50:35,107 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 14:50:35,196 [uWSGIWorker3Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.67.229 url /show/api/comment/ method POST
+2019-08-19 14:50:35,196 [uWSGIWorker3Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"sdfsdfsdf","code":"gpdn"}'
+2019-08-19 14:50:35,196 [uWSGIWorker3Core0:140482967267392] [info:331][views:comment] [INFO]- None
+2019-08-19 14:50:35,196 [uWSGIWorker3Core0:140482967267392] [info:343][views:comment] [INFO]- 1_code_error
+2019-08-19 14:52:13,133 [uWSGIWorker2Core0:140482967267392] [info:122][views:apply] [INFO]- ip 211.64.159.213 url /join/api/apply/ method GET
+2019-08-19 14:52:13,133 [uWSGIWorker2Core0:140482967267392] [info:317][views:apply] [INFO]- method_error
+2019-08-19 14:52:26,339 [uWSGIWorker2Core0:140482967267392] [info:122][views:apply] [INFO]- ip 211.64.159.213 url /join/api/apply/ method GET
+2019-08-19 14:52:26,339 [uWSGIWorker2Core0:140482967267392] [info:317][views:apply] [INFO]- method_error
+2019-08-19 14:54:28,092 [uWSGIWorker2Core0:140482967267392] [info:122][views:apply] [INFO]- ip 211.64.159.213 url /join/api/apply/ method GET
+2019-08-19 14:54:28,093 [uWSGIWorker2Core0:140482967267392] [info:317][views:apply] [INFO]- method_error
+2019-08-19 14:55:10,162 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 211.64.159.213 url /join/api/status/ method GET
+2019-08-19 14:55:10,166 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:56:19,837 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 112.224.67.229 url /join/api/status/ method GET
+2019-08-19 14:56:19,840 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 14:58:37,249 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:58:37,256 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 14:58:37,258 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 14:58:37,263 [uWSGIWorker1Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 14:58:37,268 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 14:58:37,282 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:58:37,395 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 14:59:05,772 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.67.229 url /show/api/department/ method GET
+2019-08-19 14:59:05,884 [uWSGIWorker2Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 112.224.67.229 url /show/api/member_list/ method GET
+2019-08-19 14:59:05,905 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 112.224.67.229 url /show/api/story/ method GET
+2019-08-19 14:59:05,934 [uWSGIWorker1Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 112.224.67.229 url /show/api/work/ method GET
+2019-08-19 14:59:05,964 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 112.224.67.229 url /show/api/comment_list/ method GET
+2019-08-19 14:59:05,970 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 14:59:05,982 [uWSGIWorker4Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 112.224.67.229 url /show/api/department/ method GET
+2019-08-19 15:00:21,885 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:00:21,887 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:00:21,889 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:00:21,894 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:00:21,899 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:00:21,912 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:00:22,403 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:00:37,932 [uWSGIWorker2Core0:140482967267392] [info:322][views:get_status] [INFO]- ip 211.64.159.213 url /join/api/status/ method GET
+2019-08-19 15:00:37,935 [uWSGIWorker2Core0:140482967267392] [info:343][views:get_status] [INFO]- wrong_email
+2019-08-19 15:02:08,400 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method OPTIONS
+2019-08-19 15:02:08,400 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 15:02:08,400 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 15:05:09,667 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:05:09,669 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:05:09,671 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:05:09,675 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:05:09,681 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:05:09,693 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:05:09,800 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:05:21,530 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method OPTIONS
+2019-08-19 15:05:21,530 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 15:05:21,530 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 15:05:55,723 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:05:55,725 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:05:55,726 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:05:55,731 [uWSGIWorker3Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:05:55,736 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:05:55,749 [uWSGIWorker3Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:05:55,799 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:06:03,571 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:06:03,573 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:06:03,574 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:06:03,579 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:06:03,582 [uWSGIWorker3Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:06:03,593 [uWSGIWorker3Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:06:03,678 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:06:13,191 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method OPTIONS
+2019-08-19 15:06:13,191 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 15:06:13,191 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 15:07:24,288 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:07:24,328 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:07:24,330 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:07:24,335 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:07:24,340 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:07:24,356 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:07:24,369 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:07:31,398 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:07:31,400 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:07:31,401 [uWSGIWorker4Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:07:31,407 [uWSGIWorker3Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:07:31,410 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:07:31,425 [uWSGIWorker3Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:07:31,532 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:07:42,262 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method POST
+2019-08-19 15:07:42,262 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"asdasd","code":"RUtL"}'
+2019-08-19 15:07:42,265 [uWSGIWorker2Core0:140482967267392] [info:331][views:comment] [INFO]- naGA
+2019-08-19 15:07:42,265 [uWSGIWorker2Core0:140482967267392] [info:337][views:comment] [INFO]- 0_dode_error
+2019-08-19 15:08:18,319 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:08:18,321 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:08:18,324 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:08:18,330 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:08:18,332 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:08:18,345 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:08:19,380 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:08:37,600 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method POST
+2019-08-19 15:08:37,600 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"asdasd","code":"BMFH"}'
+2019-08-19 15:08:37,603 [uWSGIWorker2Core0:140482967267392] [info:331][views:comment] [INFO]- PPqM
+2019-08-19 15:08:37,603 [uWSGIWorker2Core0:140482967267392] [info:337][views:comment] [INFO]- 0_dode_error
+2019-08-19 15:10:10,803 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.67.229 url /show/api/comment/ method OPTIONS
+2019-08-19 15:10:10,804 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b''
+2019-08-19 15:10:10,804 [uWSGIWorker2Core0:140482967267392] [info:303][views:comment] [INFO]- json_error
+2019-08-19 15:10:11,213 [uWSGIWorker4Core0:140482967267392] [info:292][views:comment] [INFO]- ip 112.224.67.229 url /show/api/comment/ method POST
+2019-08-19 15:10:11,214 [uWSGIWorker4Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"sdfsdf","code":"zorj"}'
+2019-08-19 15:10:11,214 [uWSGIWorker4Core0:140482967267392] [info:331][views:comment] [INFO]- None
+2019-08-19 15:10:11,214 [uWSGIWorker4Core0:140482967267392] [info:343][views:comment] [INFO]- 1_code_error
+2019-08-19 15:11:29,792 [uWSGIWorker1Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:11:29,794 [uWSGIWorker3Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:11:29,796 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:11:29,804 [uWSGIWorker3Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:11:29,806 [uWSGIWorker1Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:11:29,827 [uWSGIWorker1Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:11:29,889 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:11:30,176 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:11:30,182 [uWSGIWorker4Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:11:30,193 [uWSGIWorker2Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:11:30,194 [uWSGIWorker1Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:11:30,218 [uWSGIWorker2Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:11:30,223 [uWSGIWorker2Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:11:30,323 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:11:40,079 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method POST
+2019-08-19 15:11:40,080 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"asdasdaasd","code":"vGvN"}'
+2019-08-19 15:11:40,082 [uWSGIWorker2Core0:140482967267392] [info:331][views:comment] [INFO]- vGVN
+2019-08-19 15:11:40,086 [uWSGIWorker2Core0:140482967267392] [info:347][views:comment] [INFO]- comment_success
+2019-08-19 15:13:50,975 [uWSGIWorker1Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:13:50,977 [uWSGIWorker3Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:13:50,979 [uWSGIWorker4Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:13:50,984 [uWSGIWorker4Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:13:50,987 [uWSGIWorker3Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:13:51,002 [uWSGIWorker3Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:13:51,113 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:13:51,383 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:13:51,388 [uWSGIWorker1Core0:140482967267392] [info:114][views:get_story] [INFO]- ip 211.64.159.213 url /show/api/story/ method GET
+2019-08-19 15:13:51,389 [uWSGIWorker3Core0:140482967267392] [info:138][views:get_member_list] [INFO]- ip 211.64.159.213 url /show/api/member_list/ method GET
+2019-08-19 15:13:51,396 [uWSGIWorker1Core0:140482967267392] [info:214][views:get_work] [INFO]- ip 211.64.159.213 url /show/api/work/ method GET
+2019-08-19 15:13:51,398 [uWSGIWorker4Core0:140482967267392] [info:236][views:comment_list] [INFO]- ip 211.64.159.213 url /show/api/comment_list/ method GET
+2019-08-19 15:13:51,415 [uWSGIWorker4Core0:140482967267392] [info:256][views:comment_list] [INFO]- no_last_comment_list_success
+2019-08-19 15:13:51,489 [uWSGIWorker2Core0:140482967267392] [info:58][views:get_department] [INFO]- ip 211.64.159.213 url /show/api/department/ method GET
+2019-08-19 15:14:00,631 [uWSGIWorker2Core0:140482967267392] [info:292][views:comment] [INFO]- ip 211.64.159.213 url /show/api/comment/ method POST
+2019-08-19 15:14:00,632 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"asdasdsas","code":"uYZQ"}'
+2019-08-19 15:14:00,632 [uWSGIWorker2Core0:140482967267392] [info:331][views:comment] [INFO]- None
+2019-08-19 15:14:00,632 [uWSGIWorker2Core0:140482967267392] [info:343][views:comment] [INFO]- 1_code_error

@@ -11,7 +11,7 @@ info_log = logging.getLogger('info')
 
 
 def index_html(request):
-    return render(request, '../index.html')
+    return render(request, '../static/index.html')
 
 
 def response_success(content):
