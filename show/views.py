@@ -155,6 +155,7 @@ def get_member_list(request):
             content['member'].append({
                 'year': one['year'],
                 'num': len(members_of_the_year),
+                'departments_id': departments_id
             })
 
         return response_success(content)
