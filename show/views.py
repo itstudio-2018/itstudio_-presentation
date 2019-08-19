@@ -180,7 +180,7 @@ def get_member_of_the_year_and_department(request):
             return response_error(content)
         content['id'] = department_id
 
-        members = models.Member.objects.filter(year=year, departement__id=department_id)
+        members = models.Member.objects.filter(year=year, department__id=department_id)
         content['num'] = len(members)
 
         for one in members:
