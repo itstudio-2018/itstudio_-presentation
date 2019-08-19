@@ -155,7 +155,7 @@ def get_member_list(request):
         return HttpResponse(status=404)
 
 
-def get_member_of_the_year(request):
+def get_member_of_the_year_and_department(request):
     info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     if request.method == 'GET':
@@ -170,7 +170,17 @@ def get_member_of_the_year(request):
             return response_error(content)
         content['year'] = year
 
-        members = models.Member.objects.filter(year=year)
+        try:
+            department_id = int(request.GET.get('id'))
+        except:
+            department_id = 0
+        if not department_id:
+            info_log.info("department_id_error")
+            content['status'] = 'id_error'
+            return response_error(content)
+        content['id'] = department_id
+
+        members = models.Member.objects.filter(year=year, departement__id=department_id)
         content['num'] = len(members)
 
         for one in members:

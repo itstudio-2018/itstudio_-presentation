@@ -10,7 +10,7 @@ urlpatterns = [
     url(r'^api/story/', views.get_story),
 
     url(r'^api/member_list/', views.get_member_list),
-    url(r'^api/member/', views.get_member_of_the_year),
+    url(r'^api/member/', views.get_member_of_the_year_and_department()),
 
     url(r'^api/work/', views.get_work),
 
