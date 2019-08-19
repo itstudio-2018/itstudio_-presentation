@@ -16060,3 +16060,8 @@
 2019-08-19 15:14:00,632 [uWSGIWorker2Core0:140482967267392] [info:298][views:comment] [INFO]- b'{"content":"asdasdsas","code":"uYZQ"}'
 2019-08-19 15:14:00,632 [uWSGIWorker2Core0:140482967267392] [info:331][views:comment] [INFO]- None
 2019-08-19 15:14:00,632 [uWSGIWorker2Core0:140482967267392] [info:343][views:comment] [INFO]- 1_code_error
+2019-08-19 15:17:04,365 [uWSGIWorker3Core0:140002546133056] [info:292][views:comment] [INFO]- ip 112.224.67.229 url /show/api/comment/ method OPTIONS
+2019-08-19 15:17:04,481 [uWSGIWorker1Core0:140002546133056] [info:292][views:comment] [INFO]- ip 112.224.67.229 url /show/api/comment/ method POST
+2019-08-19 15:17:04,481 [uWSGIWorker1Core0:140002546133056] [info:301][views:comment] [INFO]- b'{"content":"sdfsdf","code":"zorj"}'
+2019-08-19 15:17:04,481 [uWSGIWorker1Core0:140002546133056] [info:334][views:comment] [INFO]- None
+2019-08-19 15:17:04,482 [uWSGIWorker1Core0:140002546133056] [info:346][views:comment] [INFO]- 1_code_error
