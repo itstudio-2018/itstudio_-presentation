@@ -146,7 +146,7 @@ def get_member_list(request):
 
         for one in all_year:
             departments_id = []
-            members_of_the_year = models.Member.objects.filter(year=one['year'])
+            members_of_the_year = models.Member.objects.filter(year=one['year']).order_by('department_id')
 
             for member in members_of_the_year:
                 if member.department.id not in departments_id:
