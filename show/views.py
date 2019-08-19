@@ -327,12 +327,14 @@ def comment(request):
             return response_error(content)
 
         try:
+            info_log.info(request.session)
             if code.lower() != request.session.get('code').lower():
                 info_log.info("code_error")
                 content['status'] = 'code_error'
                 return response_error(content)
         except:
             content['status'] = 'code_error'
+            info_log.info('code_error')
             return response_error(content)
 
         models.Comment(content=information).save()
