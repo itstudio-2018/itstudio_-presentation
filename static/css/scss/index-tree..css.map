@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,CAAC;EACG,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,IAAI;;AAEpB,IAAI;EACA,gBAAgB,EAAC,OAAO;;AAE5B,KAAK;EACD,OAAO,EAAE,IAAI",
-"sources": ["index-tree..scss"],
-"names": [],
-"file": "index-tree..css"
-}
