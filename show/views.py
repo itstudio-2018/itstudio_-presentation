@@ -11,7 +11,7 @@ info_log = logging.getLogger('info')
 
 
 def index_html(request):
-    return render(request, 'dist/index.html')
+    return render(request, '../index.html')
 
 
 def response_success(content):
@@ -340,7 +340,7 @@ def comment(request):
         models.Comment(content=information).save()
         info_log.info("comment_success")
         content['status'] = 'ok'
-        
+
         try:
             del request.session['code']
         except:
