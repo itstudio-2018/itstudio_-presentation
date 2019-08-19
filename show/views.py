@@ -149,9 +149,9 @@ def get_member_list(request):
             members_of_the_year = models.Member.objects.filter(year=one['year'])
 
             for member in members_of_the_year:
-                if member.department__id not in departments_id:
-                    departments_id.append(member.department__id)
-            
+                if member.department.id not in departments_id:
+                    departments_id.append(member.department.id)
+
             content['member'].append({
                 'year': one['year'],
                 'num': len(members_of_the_year),
