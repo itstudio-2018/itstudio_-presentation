@@ -38,7 +38,7 @@ def get_department_list(request):
     if request.method == 'GET':
         content = {'status': 'ok', 'list': []}
 
-        departments = models.Department.objects.filter(is_alive=True)
+        departments = models.Department.objects.all()
 
         content['num'] = len(departments)
         for one in departments:
