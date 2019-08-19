@@ -346,6 +346,11 @@ def comment(request):
         models.Comment(content=information).save()
         info_log.info("comment_success")
         content['status'] = 'ok'
+        
+        try:
+            del request.session['code']
+        except:
+            pass
 
         return response_success(content)
     else:
