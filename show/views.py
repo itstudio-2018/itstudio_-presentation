@@ -320,6 +320,7 @@ def comment(request):
             content['status'] = 'length_error'
             return response_error(content)
 
+
         try:
             code = json_data['code']
         except:
@@ -345,6 +346,27 @@ def comment(request):
             content['status'] = 'code_error'
             info_log.info('1_code_error')
             return response_error(content)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         models.Comment(content=information).save()
         info_log.info("comment_success")
