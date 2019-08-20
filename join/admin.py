@@ -13,7 +13,7 @@ class ApplicantAdmin(admin.ModelAdmin):
     list_per_page = 30
     search_fields = ('name',)
     list_filter = ('status', 'year')
-    ordering = ('name', 'status')
+    ordering = ('name', '-status')
 
     def status_1(self, request, queryset):
         queryset = queryset.filter(status=0)
@@ -25,8 +25,7 @@ class ApplicantAdmin(admin.ModelAdmin):
         sent_status(email, 1)
 
         queryset.update(status=1)
-
-    status_1.short_description = '激活'
+    status_1.short_description = '未激活 --> 已激活'
 
     def status_2(self, request, queryset):
         queryset = queryset.filter(status=1)
@@ -38,10 +37,10 @@ class ApplicantAdmin(admin.ModelAdmin):
         sent_status(email, 2)
 
         queryset.update(status=2)
-    status_2.short_description = '通过初审'
+    status_2.short_description = '已激活 --> 未通过初审'
 
     def status_3(self, request, queryset):
-        queryset = queryset.filter(status=2)
+        queryset = queryset.filter(status=1)
         info_log.info("send_email_status_3")
 
         email = []
@@ -50,7 +49,7 @@ class ApplicantAdmin(admin.ModelAdmin):
         sent_status(email, 3)
 
         queryset.update(status=3)
-    status_3.short_description = '通过面试'
+    status_3.short_description = '已激活 --> 已通过初审'
 
     def status_4(self, request, queryset):
         queryset = queryset.filter(status=3)
@@ -62,18 +61,67 @@ class ApplicantAdmin(admin.ModelAdmin):
         sent_status(email, 4)
 
         queryset.update(status=4)
-    status_4.short_description = '选中'
+    status_4.short_description = '已通过初审 --> 未通过面试'
 
-    def status_false(self, request, queryset):
-        info_log.info("send_email_status_-1")
+    def status_5(self, request, queryset):
+        queryset = queryset.filter(status=3)
+        info_log.info("send_email_status_5")
 
         email = []
         for one in queryset:
             email.append(str(one.email))
-        sent_status(email, -1)
+        sent_status(email, 5)
 
-        queryset.update(status=-1)
-    status_false.short_description = '刷下'
+        queryset.update(status=5)
+    status_5.short_description = '已通过初审 --> 已通过面试'
+
+    def status_6(self, request, queryset):
+        queryset = queryset.filter(status=5)
+        info_log.info("send_email_status_6")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 6)
+
+        queryset.update(status=6)
+    status_6.short_description = '已通过面试 --> 未通过笔试'
+
+    def status_7(self, request, queryset):
+        queryset = queryset.filter(status=5)
+        info_log.info("send_email_status_7")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 7)
+
+        queryset.update(status=7)
+    status_7.short_description = '已通过面试 --> 已通过笔试'
+
+    def status_8(self, request, queryset):
+        queryset = queryset.filter(status=7)
+        info_log.info("send_email_status_8")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 8)
+
+        queryset.update(status=8)
+    status_8.short_description = '已通过笔试 --> 未录取'
+
+    def status_9(self, request, queryset):
+        queryset = queryset.filter(status=7)
+        info_log.info("send_email_status_9")
+
+        email = []
+        for one in queryset:
+            email.append(str(one.email))
+        sent_status(email, 9)
+
+        queryset.update(status=9)
+    status_9.short_description = '已通过笔试 --> 已录取'
 
     def save_excel(self, request, queryset):
         filename = 'information'
@@ -124,7 +172,8 @@ class ApplicantAdmin(admin.ModelAdmin):
         return response
     save_excel.short_description = '导入Excel表格'
 
-    actions = [status_1, status_2, status_3, status_4, status_false, save_excel]
+    actions = [status_1, status_2, status_3, status_4, status_5, status_6, status_7, status_8, status_9,
+               save_excel]
 
 
 @admin.register(models.Link)

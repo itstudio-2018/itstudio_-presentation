@@ -57,15 +57,23 @@ def sent_status(email, status):
     info_log.info(email)
     msg = ''
     if status == 1:
-        msg = '激活'
+        msg = '已激活'
     if status == 2:
-        msg = '通过初审'
+        msg = '未通过初审'
     if status == 3:
-        msg = '通过面试'
+        msg = '已通过初审'
     if status == 4:
-        msg = '选中'
-    if status == -1:
-        msg = '很遗憾'
+        msg = '未通过面试'
+    if status == 5:
+        msg = '已通过面试'
+    if status == 6:
+        msg = '未通过笔试'
+    if status == 7:
+        msg = '通过笔试'
+    if status == 8:
+        msg = '未录取'
+    if status == 9:
+        msg = '已录取'
 
     send_mail('爱特工作室',
               msg,
@@ -337,7 +345,28 @@ def get_status(request):
 
         info_log.info("get_status_success")
         content['status'] = 'ok'
-        content['situation'] = applicant[0].status
+        status = applicant[0].status
+
+        if status == 0:
+            content['statusList'] = [2, 2, 2, 2, 2]
+        if status == 1:
+            content['statusList'] = [1, 2, 2, 2, 2]
+        if status == 2:
+            content['statusList'] = [1, 0, 2, 2, 2]
+        if status == 3:
+            content['statusList'] = [1, 1, 2, 2, 2]
+        if status == 4:
+            content['statusList'] = [1, 1, 0, 2, 2]
+        if status == 5:
+            content['statusList'] = [1, 1, 1, 2, 2]
+        if status == 6:
+            content['statusList'] = [1, 1, 1, 0, 2]
+        if status == 7:
+            content['statusList'] = [1, 1, 1, 1, 2]
+        if status == 8:
+            content['statusList'] = [1, 1, 1, 1, 0]
+        if status == 9:
+            content['statusList'] = [1, 1, 1, 1, 1]
 
         return response_success(content)
     else:

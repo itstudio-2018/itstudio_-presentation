@@ -13,12 +13,16 @@ class Applicant(models.Model):
     message = models.CharField(max_length=200, verbose_name=u'备注', default='', blank=True)
 
     status_choice = (
-        (-1, '未通过'),
         (0, '未激活'),
-        (1, '待初审'),
-        (2, '待面试'),
-        (3, '待笔试'),
-        (4, '已选中'),
+        (1, '已激活'),
+        (2, '未通过初审'),
+        (3, '已通过初审'),
+        (4, '未通过面试'),
+        (5, '已通过面试'),
+        (6, '未通过笔试'),
+        (7, '已通过笔试'),
+        (8, '未录取'),
+        (9, '已录取'),
     )
 
     status = models.SmallIntegerField(default=0, choices=status_choice, verbose_name=u'状态')
