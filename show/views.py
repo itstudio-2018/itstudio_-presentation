@@ -320,25 +320,25 @@ def comment(request):
             content['status'] = 'length_error'
             return response_error(content)
 
-        try:
-            code = json_data['code']
-        except:
-            code = ''
-        if not code:
-            info_log.info("empty_code")
-            content['status'] = 'code_error'
-            return response_error(content)
-
-        try:
-            info_log.info(request.session)
-            if code.lower() != request.session.get('code').lower():
-                info_log.info("code_error")
-                content['status'] = 'code_error'
-                return response_error(content)
-        except:
-            content['status'] = 'code_error'
-            info_log.info('code_error')
-            return response_error(content)
+        # try:
+        #     code = json_data['code']
+        # except:
+        #     code = ''
+        # if not code:
+        #     info_log.info("empty_code")
+        #     content['status'] = 'code_error'
+        #     return response_error(content)
+        #
+        # try:
+        #     info_log.info(request.session)
+        #     if code.lower() != request.session.get('code').lower():
+        #         info_log.info("code_error")
+        #         content['status'] = 'code_error'
+        #         return response_error(content)
+        # except:
+        #     content['status'] = 'code_error'
+        #     info_log.info('code_error')
+        #     return response_error(content)
 
         models.Comment(content=information).save()
         info_log.info("comment_success")
