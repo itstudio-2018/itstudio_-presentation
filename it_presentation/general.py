@@ -134,6 +134,9 @@ class Captcha():
 
 
 def captcha_img(request):
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    info_log.info('get_captcha')
+
     img = Captcha()
     return HttpResponse(img.saveInMemory(request),
                         content_type='image/png',
