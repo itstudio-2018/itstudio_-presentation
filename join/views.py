@@ -120,7 +120,7 @@ def confirm(request):
 
         # return HttpResponse(status=200)
 
-        return redirect('www.itstudio.club/404')
+        return redirect('http://www.itstudio.club/404')
 
     else:
         info_log.info("method_error")
