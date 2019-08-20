@@ -1,4 +1,5 @@
 
+
 """
 Django settings for it_presentation project.
 
@@ -116,13 +117,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -161,6 +162,14 @@ EMAIL_FROM = '15563709699@163.com'
 #        "OPTIONS": {
 #        "CLIENT_CLASS": "django_redis.client.DefaultClient",
 #        "CONNECTION_POOL_KWARGS": {"max_connections": 100}}}}　　
+
+# Password validation
+# https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
+
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+
 
 
 BASE_LOG_DIR = os.path.join(BASE_DIR, "log")
