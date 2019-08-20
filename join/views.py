@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.conf import settings
 from django.core.mail import send_mail
@@ -118,7 +118,9 @@ def confirm(request):
 
         link.delete()
 
-        return HttpResponse(status=200)
+        # return HttpResponse(status=200)
+
+        return redirect('www.itstudio.club/404')
 
     else:
         info_log.info("method_error")
