@@ -140,7 +140,7 @@ def get_member_list(request):
     if request.method == 'GET':
         content = {'status': 'ok', 'member': []}
 
-        all_of = models.Member.objects.all().order_by('-year').values('year')
+        all_of = models.Member.objects.all().order_by('year').values('year')
         all_year = []
         [all_year.append(i) for i in all_of if not i in all_year]
 
