@@ -36,7 +36,7 @@ def dist_redirect(request, left_url):
 
 class Captcha():
 
-    def __init__(self, width=200, height=50, fontSize=30, num=4, bgColor='#ffffff'):
+    def __init__(self, width=200, height=50, fontSize=40, num=4, bgColor='#ffffff'):
         self.width = width
         # 生成图片宽度
         self.height = height  # 生成图片高度
