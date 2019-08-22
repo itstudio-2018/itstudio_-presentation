@@ -147,4 +147,5 @@ def captcha_img(request):
 
 from django.shortcuts import render_to_response
 def page404(request):
+    info_log.info('error error error')
     return render_to_response('dist/apply.html')
