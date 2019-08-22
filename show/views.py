@@ -320,7 +320,7 @@ def comment(request):
         information = information.replace('\n', '')
         information = information.replace('\r', '')
         information = information.strip()
-        
+
         if len(information) > 80:
             info_log.info("content_length_error")
             content['status'] = 'length_error'
