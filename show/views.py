@@ -315,7 +315,13 @@ def comment(request):
             info_log.info("content_error")
             content['status'] = 'content_error'
             return response_error(content)
-        if len(content) > 80:
+
+        information = str(information).replace('  ', ' ')
+        information = information.replace('\n', '')
+        information = information.replace('\r', '')
+        information = information.strip()
+        
+        if len(information) > 80:
             info_log.info("content_length_error")
             content['status'] = 'length_error'
             return response_error(content)
