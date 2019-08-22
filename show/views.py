@@ -368,7 +368,13 @@ def comment(request):
 
 
 
-        models.Comment(content=information).save()
+        try:
+            models.Comment(content=information).save()
+        except:
+            info_log.info('save_error')
+            content['status'] = 'error'
+            return response_error(content)
+
         info_log.info("comment_success")
         content['status'] = 'ok'
 
