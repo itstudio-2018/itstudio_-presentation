@@ -148,4 +148,10 @@ def captcha_img(request):
 from django.shortcuts import render_to_response
 def page404(request):
     info_log.info('error error error')
-    return render_to_response('dist/apply.html')
+    info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
+    if request.path == '/404' or request.path == '/success':
+        
+        return render_to_response('dist/apply.html')
+    #return render_to_response('http://www.itstudio.club/404')
+    #return HttpResponse(status=404)
+    return redirect('http://www.itstudio.club/')
