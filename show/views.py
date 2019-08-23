@@ -51,7 +51,7 @@ def get_department_list(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def get_department(request):
@@ -76,7 +76,7 @@ def get_department(request):
 
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def get_one_department(request):
@@ -88,7 +88,7 @@ def get_one_department(request):
 
         except:
             info_log.info('id_error')
-            return HttpResponse(status=404)
+            return redirect('http://www.itstudio.club/404')
 
         content = {}
 
@@ -103,11 +103,11 @@ def get_one_department(request):
             return response_success(content)
         else:
             info_log.info('no_id_error')
-            return HttpResponse(status=404)
+            return redirect('http://www.itstudio.club/404')
 
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def get_story(request):
@@ -131,7 +131,7 @@ def get_story(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def get_member_list(request):
@@ -161,7 +161,7 @@ def get_member_list(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def get_member_of_the_year_and_department(request):
@@ -207,7 +207,7 @@ def get_member_of_the_year_and_department(request):
 
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def get_work(request):
@@ -229,7 +229,7 @@ def get_work(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def comment_list(request):
@@ -284,7 +284,7 @@ def comment_list(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 
@@ -392,6 +392,6 @@ def comment(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 

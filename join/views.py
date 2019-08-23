@@ -90,27 +90,27 @@ def confirm(request):
         except:
             email = ''
         if not email:
-            return HttpResponse(status=404)
+            return redirect('http://www.itstudio.club/404')
 
         try:
             code = request.GET.get('code')
         except:
             code = ''
         if not code:
-            return HttpResponse(status=404)
+            return redirect('http://www.itstudio.club/404')
 
         link = models.Link.objects.filter(email=email, code=code)
         if not link:
-            return HttpResponse(status=404)
+            return redirect('http://www.itstudio.club/404')
         link = link[0]
 
         if link.expiration.replace(tzinfo=None) + datetime.timedelta(hours=8, minutes=10) < \
                 datetime.datetime.now().replace(tzinfo=None):
-            return HttpResponse(status=404)
+            return redirect('http://www.itstudio.club/404')
 
         applicant = models.Applicant.objects.filter(email=email)
         if not applicant:
-            return HttpResponse(status=404)
+            return redirect('http://www.itstudio.club/404')
         applicant = applicant[0]
 
         applicant.status = 1
@@ -124,7 +124,7 @@ def confirm(request):
 
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 @csrf_exempt
@@ -328,7 +328,7 @@ def apply(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
 def get_status(request):
@@ -385,6 +385,6 @@ def get_status(request):
         return response_success(content)
     else:
         info_log.info("method_error")
-        return HttpResponse(status=404)
+        return redirect('http://www.itstudio.club/404')
 
 
