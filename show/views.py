@@ -13,8 +13,13 @@ info_log = logging.getLogger('info')
 def index_html(request):
     if request.is_phone or request.is_mobile:
         info_log.info('mobile_request')
-        return render(request, '../static_p/index.html')
+        return redirect('http://www.itstudio.club/mobile/')
     return render(request, '../static/index.html')
+
+
+def index_html_mobile(request):
+    info_log.info('request mobile return mobile html')
+    return render(request, '../static_p/index.html')
 
 
 def response_success(content):

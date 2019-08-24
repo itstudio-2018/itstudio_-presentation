@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf.urls.static import static
 from . import settings
-from show.views import index_html
+from show.views import index_html, index_html_mobile
 from . import general
 
 urlpatterns = [
@@ -25,7 +25,7 @@ urlpatterns = [
 
     url(r'^show/', include('show.urls', namespace='show')),
     url(r'^join/', include('join.urls', namespace='join')),
-
+    url(r'^mobile', index_html_mobile),
     url(r'^$', index_html),
 
     url(r'^js/(.+)', general.js_redirect),
