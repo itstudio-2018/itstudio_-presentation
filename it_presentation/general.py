@@ -149,7 +149,8 @@ from django.shortcuts import render_to_response
 def page404(request):
     info_log.info('error error error')
     info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
-    if request.path == '/404' or request.path == '/success':
+    if request.path == '/404' or request.path == '/success'\
+            or request.path == 'mobile/404' or request.path == 'mobile/success':
         
         return render_to_response('dist/apply.html')
     #return render_to_response('http://www.itstudio.club/404')
