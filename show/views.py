@@ -12,7 +12,7 @@ info_log = logging.getLogger('info')
 
 def index_html(request):
     if request.is_phone or request.is_mobile:
-        return HttpResponse('this is mobile')
+        return render(request, '../static_p/index.html')
     return render(request, '../static/index.html')
 
 
