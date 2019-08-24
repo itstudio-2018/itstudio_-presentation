@@ -149,10 +149,15 @@ from django.shortcuts import render_to_response
 def page404(request):
     info_log.info('error error error')
     info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
-    if request.path == '/404' or request.path == '/success'\
-            or request.path == '/mobile/404' or request.path == '/mobile/success':
-        info_log.info('404 or success')
-        return render_to_response('dist/apply.html')
-    #return render_to_response('http://www.itstudio.club/404')
-    #return HttpResponse(status=404)
+
+    # PC
+    if request.path == '/404' or request.path == '/success':
+        info_log.info('PC 404 or success')
+        # return render_to_response('dist/apply.html')
+
+    if request.is_phone or request.is_mobile:
+        if request.path == '/mobile/404' or request.path == '/mobile/success':
+            info_log.info('mobile 404 or success')
+        # return render_to_response('dist/apply.html')
+
     return redirect('http://www.itstudio.club/')
