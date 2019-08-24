@@ -57,7 +57,7 @@ def send(email, name):
 
 def sent_status(email, status):
     info_log.info(email)
-    name = models.Applicant.objects.filter(email=email)[0]
+    name = models.Applicant.objects.filter(email=email)[0].name
 
     base_message = name + '同学:\n' + '你'
 
