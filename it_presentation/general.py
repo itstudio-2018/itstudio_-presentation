@@ -153,11 +153,11 @@ def page404(request):
     # PC
     if request.path == '/404' or request.path == '/success':
         info_log.info('PC 404 or success')
-        # return render_to_response('dist/apply.html')
+        return render_to_response('dist/apply.html')
 
     if request.is_phone or request.is_mobile:
         if request.path == '/mobile/404' or request.path == '/mobile/success':
             info_log.info('mobile 404 or success')
-        # return render_to_response('dist/apply.html')
+        return render_to_response('dist/apply.html')
 
     return redirect('http://www.itstudio.club/')
