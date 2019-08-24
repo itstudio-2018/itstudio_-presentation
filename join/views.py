@@ -119,6 +119,8 @@ def confirm(request):
         link.delete()
 
         # return HttpResponse(status=200)
+        if request.is_phone or request.is_mobile:
+            return redirect('http://www.itstudio.club/mobile/success')
 
         return redirect('http://www.itstudio.club/success')
 
