@@ -34,7 +34,7 @@ def response_error(content):
                         charset='utf-8')
 
 
-def send(email):
+def send(email, name):
     # msg code
     code = ''
     base_str = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789'
@@ -46,7 +46,9 @@ def send(email):
 
     models.Link(email=email, code=code).save()
 
-    msg = 'http://www.itstudio.club/join/confirm/' + '?email=' + email + '&code=' + code
+    base_message = name + '同学，你好！\n' + '你的报名信息已经收到，请点击 或 复制以下链接到地址栏完成报名\n'
+
+    msg = base_message + 'http://www.itstudio.club/join/confirm/' + '?email=' + email + '&code=' + code
     send_mail('爱特工作室',
               msg,
               settings.EMAIL_FROM,
@@ -55,6 +57,10 @@ def send(email):
 
 def sent_status(email, status):
     info_log.info(email)
+    name = models.Applicant.objects.filter(email=email)[0]
+
+    base_message = name + '同学:\n' + '你'
+
     msg = ''
     if status == 1:
         msg = '已激活'
@@ -71,12 +77,12 @@ def sent_status(email, status):
     if status == 7:
         msg = '通过笔试'
     if status == 8:
-        msg = '未录取'
+        msg = '未被录取'
     if status == 9:
-        msg = '已录取'
+        msg = '已被录取'
 
     send_mail('爱特工作室',
-              msg,
+              base_message + msg,
               settings.EMAIL_FROM,
               email, )
 
@@ -322,7 +328,7 @@ def apply(request):
                          message=message
                          ).save()
 
-        send(email)
+        send(email, name)
 
         info_log.info("apply_success")
         content['status'] = 'ok'
