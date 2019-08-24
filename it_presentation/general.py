@@ -151,10 +151,12 @@ def page404(request):
     info_log.info("ip %s url %s method %s" % (str(request.META.get('REMOTE_ADDR')), request.path, request.method))
 
     # PC
-    if request.path == '/404' or request.path == '/success':
-        info_log.info('PC 404 or success')
-        return render_to_response('dist/apply.html')
+    if not request.is_phone and not request.is_mobile:
+        if request.path == '/404' or request.path == '/success':
+            info_log.info('PC 404 or success')
+            return render_to_response('dist/apply.html')
 
+    # mobile
     if request.is_phone or request.is_mobile:
         if request.path == '/mobile/404' or request.path == '/mobile/success':
             info_log.info('mobile 404 or success')
