@@ -109,9 +109,9 @@ def confirm(request):
             return redirect('http://www.itstudio.club/404')
         link = link[0]
 
-        if link.expiration.replace(tzinfo=None) + datetime.timedelta(hours=8, minutes=10) < \
-                datetime.datetime.now().replace(tzinfo=None):
-            return redirect('http://www.itstudio.club/404')
+        # if link.expiration.replace(tzinfo=None) + datetime.timedelta(hours=8, minutes=10) < \
+        #         datetime.datetime.now().replace(tzinfo=None):
+        #     return redirect('http://www.itstudio.club/404')
 
         applicant = models.Applicant.objects.filter(email=email)
         if not applicant:
