@@ -36,6 +36,10 @@ class Applicant(models.Model):
     def __str__(self):
         return self.name
 
+    def get_department(self):
+        return self.department.name
+    get_department.short_description = '部门'
+
 
 class Link(models.Model):
     email = models.EmailField(max_length=254, unique=True, verbose_name=u'邮箱')
