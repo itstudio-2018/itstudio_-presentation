@@ -311,8 +311,11 @@ def apply(request):
             content['status'] = 'code_error'
             return response_error(content)
 
-
-        the_one = models.Applicant.objects.filter(phone_number=phone_number, email=email, status=0)
+        the_one = models.Applicant.objects.filter(phone_number=phone_number, status=0)
+        if the_one:
+            info_log.info("change_application_information")
+            the_one.delete()
+        the_one = models.Applicant.objects.filter(email=email, status=0)
         if the_one:
             info_log.info("change_application_information")
             the_one.delete()
