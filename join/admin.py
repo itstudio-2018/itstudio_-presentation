@@ -9,10 +9,10 @@ info_log = logging.getLogger('info')
 
 @admin.register(models.Applicant)
 class ApplicantAdmin(admin.ModelAdmin):
-    list_display = ('name', 'phone_number', 'email', 'year', 'status', 'get_department')
+    list_display = ('name', 'phone_number', 'email', 'message', 'status', 'get_department')
     list_per_page = 30
     search_fields = ('name',)
-    list_filter = ('status', 'year', 'department')
+    list_filter = ('status', 'message', 'department')
     ordering = ('name', '-status')
 
     def status_1(self, request, queryset):
