@@ -154,7 +154,7 @@ def page404(request):
     if not request.is_phone and not request.is_mobile:
         if request.path == '/404' or request.path == '/success':
             info_log.info('PC 404 or success')
-            return render_to_response('dist/apply.html')
+            return render_to_response('index.html')
 
     # mobile
     if request.is_phone or request.is_mobile:
@@ -163,3 +163,9 @@ def page404(request):
             return render_to_response('dist/apply.html')
 
     return redirect('http://www.itstudio.club/')
+
+
+
+def page_success(request):
+    info_log.info('page success')
+    return render_to_response('../static/index.html')

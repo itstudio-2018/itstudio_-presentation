@@ -22,7 +22,7 @@ from . import general
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
+    url(r'^404/', general.page_success),
     url(r'^show/', include('show.urls', namespace='show')),
     url(r'^join/', include('join.urls', namespace='join')),
     url(r'^mobile', index_html_mobile),
